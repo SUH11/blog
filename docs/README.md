@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /egg.png
-heroText: 裂泉的前端记录
-tagline: 一点一滴都是进步
+heroText: SUH的前端记录
+tagline: 路漫漫其修远兮，吾将上下而求索
 actionText: 马上进入 →
 actionLink: /pages/folder1/test1.md
 features:
