@@ -35,7 +35,12 @@ module.exports = {
                     { title: '1.Event Loop', path: '/pages/js/eventLoop.md' },
                     { title: '2.继承', path: '/pages/js/extend.md' },
                     { title: '3.模块化', path: '/pages/js/module.md' },
-                    { title: '4.Promise', path: '/pages/js/promise.md' }
+                    { title: '4.Promise', path: '/pages/js/promise.md' },
+                    { title: '5.XMLHttpRequest', path: '/pages/js/XMLHttpRequest.md' },
+                    { title: '6.手写call apply bind', path: '/pages/js/call-apply-bind.md' },
+                    { title: '7.JavaScript位运算', path: '/pages/js/byte.md' },
+                    { title: 'echarts保存为图片，从源码简单分析', path: '/pages/js/echarts.md' },
+                    { title: '常用优化方法', path: '/pages/js/youhua.md' },
                 ]
             },
             {
@@ -47,11 +52,13 @@ module.exports = {
                 ]
             },
             {
-                title: 'Docker',
-                collapsable: true, 
+                title: 'Vue',
+                collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                    { title: '小试牛刀Docker', path: '/pages/docker/note.md' }
+                    { title: 'Vue里的指令', path: '/pages/vue/directive.md' },
+                    { title: 'Vue常见问题', path: '/pages/vue/question.md' },
+                    { title: 'Vue.js源码分析之this._init', path: '/pages/vue/vue2init.md' },
                 ]
             },
             {
@@ -60,6 +67,22 @@ module.exports = {
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                     { title: 'React-ssr', path: '/pages/react/react-ssr.md' }
+                ]
+            },
+            {
+                title: 'Webpack',
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    { title: '1.webpack打包参数及常用包', path: '/pages/webpack/params.md' }
+                ]
+            },
+            {
+                title: '算法和数据结构',
+                collapsable: true, 
+                sidebarDepth: 1,
+                children: [
+                    { title: 'JavaScript实现二叉树笔记', path: '/pages/datastruct/bst.md' }
                 ]
             },
             {
