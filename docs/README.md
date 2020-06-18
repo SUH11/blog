@@ -4,14 +4,14 @@ heroImage: /logo.jpeg
 heroText: SUH的前端记录
 tagline: 路漫漫其修远兮，吾将上下而求索
 actionText: 马上进入 →
-actionLink: /pages/folder1/test1.md
+actionLink: /pages/js/eventLoop.md
 features:
 - title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  details: 本文档采用VuePress搭建而成，用 Markdown 写作
+- title: 好好学习
+  details: 无论在人生的哪个阶段，都要好好学习，沉淀自己，不要被焦虑所左右
+- title: 关注新技术
+  details: 对新知识抱有好奇心，努力学习新知识ing
 ---
 <!-- 
 <ClientOnly>
