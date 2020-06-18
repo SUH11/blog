@@ -48,7 +48,8 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                    { title: '1.css知识点', path: '/pages/css/css.md' }
+                    { title: '1.css知识点', path: '/pages/css/css.md' },
+                    { title: 'currentColor', path: '/pages/css/currentColor.md' }
                 ]
             },
             {
@@ -56,9 +57,12 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                    { title: 'Vue里的指令', path: '/pages/vue/directive.md' },
-                    { title: 'Vue常见问题', path: '/pages/vue/question.md' },
-                    { title: 'Vue.js源码分析之this._init', path: '/pages/vue/vue2init.md' },
+                    { title: 'vue里的指令', path: '/pages/vue/directive.md' },
+                    { title: 'vue常见问题', path: '/pages/vue/question.md' },
+                    { title: 'vuex使用及实现', path: '/pages/vue/vuex.md' },
+                    { title: 'vue-router使用及简单实现', path: '/pages/vue/vue-router.md' },
+                    { title: '简单提示框', path: '/pages/vue/notice.md' },
+                    { title: 'vue.js源码分析之this._init', path: '/pages/vue/vue2init.md' },
                 ]
             },
             {
@@ -82,7 +86,10 @@ module.exports = {
                 collapsable: true, 
                 sidebarDepth: 1,
                 children: [
-                    { title: 'JavaScript实现二叉树笔记', path: '/pages/datastruct/bst.md' }
+                    { title: '1.104二叉树的最大深度', path: '/pages/datastruct/104.md' },
+                    { title: '链表', path: '/pages/datastruct/listNode.md' },
+                    { title: 'JavaScript实现二叉树笔记', path: '/pages/datastruct/bst.md' },
+                    { title: '判断对角线', path: '/pages/datastruct/line.md' }
                 ]
             },
             {
