@@ -39,6 +39,12 @@ module.exports = {
                     { title: '5.XMLHttpRequest', path: '/pages/js/XMLHttpRequest.md' },
                     { title: '6.手写call apply bind', path: '/pages/js/call-apply-bind.md' },
                     { title: '7.JavaScript位运算', path: '/pages/js/byte.md' },
+                    { title: '作用域', path: '/pages/js/scope.md' },
+                    { title: '闭包', path: '/pages/js/closure.md' },
+                    { title: 'this', path: '/pages/js/this.md' },
+                    { title: '事件', path: '/pages/js/event.md' },
+                    { title: '提升', path: '/pages/js/promote.md' },
+                    { title: '原型', path: '/pages/js/prototype.md' },
                     { title: 'echarts保存为图片，从源码简单分析', path: '/pages/js/echarts.md' },
                     { title: '常用优化方法', path: '/pages/js/youhua.md' },
                 ]
