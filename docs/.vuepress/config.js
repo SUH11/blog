@@ -32,13 +32,13 @@ module.exports = {
                 collapsable: true, // 可选的, 默认值是 true,
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
-                    { title: '1.Event Loop', path: '/pages/js/eventLoop.md' },
-                    { title: '2.继承', path: '/pages/js/extend.md' },
-                    { title: '3.模块化', path: '/pages/js/module.md' },
-                    { title: '4.Promise', path: '/pages/js/promise.md' },
-                    { title: '5.XMLHttpRequest', path: '/pages/js/XMLHttpRequest.md' },
-                    { title: '6.手写call apply bind', path: '/pages/js/call-apply-bind.md' },
-                    { title: '7.JavaScript位运算', path: '/pages/js/byte.md' },
+                    { title: '1. Event Loop', path: '/pages/js/eventLoop.md' },
+                    { title: '2. 继承', path: '/pages/js/extend.md' },
+                    { title: '3. 模块化', path: '/pages/js/module.md' },
+                    { title: '4. Promise', path: '/pages/js/promise.md' },
+                    { title: '5. XMLHttpRequest', path: '/pages/js/XMLHttpRequest.md' },
+                    { title: '6. 手写call apply bind', path: '/pages/js/call-apply-bind.md' },
+                    { title: '7. JavaScript位运算', path: '/pages/js/byte.md' },
                     { title: '作用域', path: '/pages/js/scope.md' },
                     { title: '闭包', path: '/pages/js/closure.md' },
                     { title: 'this', path: '/pages/js/this.md' },
@@ -85,6 +85,22 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     { title: '1.webpack打包参数及常用包', path: '/pages/webpack/params.md' }
+                ]
+            },
+            {
+                title: 'HTTP详解',
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    { title: 'HTTP前言', path: '/pages/http/course_http.md' },
+                    { title: '15. HTTP的实体数据', path: '/pages/http/http-15-body.md' },
+                    { title: '16. HTTP传输大文件的方法', path: '/pages/http/http-16-big-file.md' },
+                    { title: '17. HTTP的连接管理', path: '/pages/http/http-17-connect.md' },
+                    { title: '18. HTTP的重定向和跳转', path: '/pages/http/http-18-redirect.md' },
+                    { title: '19. HTTP的Cookie', path: '/pages/http/http-19-cookie.md' },
+                    { title: '20. HTTP的缓存控制', path: '/pages/http/http-20-cache.md' },
+                    { title: '21. HTTP的代理服务', path: '/pages/http/http-21-proxy.md' },
+                    { title: '22. HTTP的缓存代理', path: '/pages/http/http-22-cache-proxy.md' },
                 ]
             },
             {
