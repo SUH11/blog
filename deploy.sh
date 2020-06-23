@@ -11,7 +11,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m '增加http内容'
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f git@github.com:SUH11/SUH11.github.io.git master
