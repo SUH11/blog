@@ -92,7 +92,7 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                    { title: 'HTTP前言', path: '/pages/http/course_http.md' },
+                    { title: 'HTTP笔记前言', path: '/pages/http/course_http.md' },
                     { title: '15. HTTP的实体数据', path: '/pages/http/http-15-body.md' },
                     { title: '16. HTTP传输大文件的方法', path: '/pages/http/http-16-big-file.md' },
                     { title: '17. HTTP的连接管理', path: '/pages/http/http-17-connect.md' },
