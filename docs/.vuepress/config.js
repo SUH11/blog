@@ -115,6 +115,14 @@ module.exports = {
                 ]
             },
             {
+                title: 'Git常见用法',
+                collapsable: true, 
+                sidebarDepth: 1,
+                children: [
+                    { title: 'git不同用户怎么切换', path: '/pages/git/local.md' }
+                ]
+            },
+            {
                 title: '实战',
                 collapsable: true,
                 sidebarDepth: 1,
