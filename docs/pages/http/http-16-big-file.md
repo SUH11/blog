@@ -16,7 +16,7 @@
 
    Transfer-Encoding: chunked
 
-   ![image-20200622104747418](/Users/su/Library/Application Support/typora-user-images/image-20200622104747418.png)
+   <a data-fancybox title="image-20200622104747418" href="/Users/su/Library/Application Support/typora-user-images/image-20200622104747418.png">![image-20200622104747418](/Users/su/Library/Application Support/typora-user-images/image-20200622104747418.png)</a>
 
 
 
@@ -76,7 +76,7 @@ Range针对的是原数据
 
    MIME 类型：`multipart/byteranges`
 
-![image-20200622110844685](https://raw.githubusercontent.com/SUH11/images/master/http/16-1.png)
+<a data-fancybox title="image-20200622110844685" href="https://raw.githubusercontent.com/SUH11/images/master/http/16-1.png">![image-20200622110844685](https://raw.githubusercontent.com/SUH11/images/master/http/16-1.png)</a>
 
 例子：
 

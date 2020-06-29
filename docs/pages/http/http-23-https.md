@@ -39,7 +39,7 @@
 
    例子
 
-   ![](https://static001.geekbang.org/resource/image/5e/24/5ead57e03f127ea8f244d715186adb24.png)
+   <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/5e/24/5ead57e03f127ea8f244d715186adb24.png">![](https://static001.geekbang.org/resource/image/5e/24/5ead57e03f127ea8f244d715186adb24.png)</a>
 
    > TLS 是 1.2
    >

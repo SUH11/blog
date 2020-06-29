@@ -62,7 +62,7 @@
 
        > 小一点的 CA 可以让大 CA 签名认证，但链条的最后，也就是 Root CA，就只能自己证明自己了，这个就叫“自签名证书”（Self-Signed Certificate）或者“根证书”（Root Certificate）
 
-     ![https://static001.geekbang.org/resource/image/8f/9c/8f0813e9555ba1a40bd2170734aced9c.png](https://static001.geekbang.org/resource/image/8f/9c/8f0813e9555ba1a40bd2170734aced9c.png)
+     <a data-fancybox title="https://static001.geekbang.org/resource/image/8f/9c/8f0813e9555ba1a40bd2170734aced9c.png" href="https://static001.geekbang.org/resource/image/8f/9c/8f0813e9555ba1a40bd2170734aced9c.png">![https://static001.geekbang.org/resource/image/8f/9c/8f0813e9555ba1a40bd2170734aced9c.png](https://static001.geekbang.org/resource/image/8f/9c/8f0813e9555ba1a40bd2170734aced9c.png)</a>
 
    上网的时候只要服务器发过来它的证书，就可以验证证书里的签名，顺着证书链（Certificate Chain）一层层地验证，直到找到根证书，就能够确定证书是可信的，从而里面的公钥也是可信的。
 

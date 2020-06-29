@@ -14,7 +14,7 @@ TLS1.3 的三个主要改进目标：**兼容**、**安全**与**性能**。
 
    **扩展协议**
 
-   - “Hello”消息后面就必须有“supported_versions”扩展
+   - “Hello”消息后面就必须有“`supported_versions`”扩展
 
 
 
@@ -47,15 +47,15 @@ TLS1.3 的三个主要改进目标：**兼容**、**安全**与**性能**。
 
    TLS1.3:
 
-   ![TLS1.3握手](https://static001.geekbang.org/resource/image/4d/b0/4d1df4d07dbb1c2500fc4ea69ecf7ab0.png)
+   <a data-fancybox title="TLS1.3握手" href="https://static001.geekbang.org/resource/image/4d/b0/4d1df4d07dbb1c2500fc4ea69ecf7ab0.png">![TLS1.3握手](https://static001.geekbang.org/resource/image/4d/b0/4d1df4d07dbb1c2500fc4ea69ecf7ab0.png)</a>
 
    TLS1.2:
 
-   ![https://static001.geekbang.org/resource/image/69/6c/69493b53f1b1d540acf886ebf021a26c.png](https://static001.geekbang.org/resource/image/69/6c/69493b53f1b1d540acf886ebf021a26c.png)
+   <a data-fancybox title="TLS1.2握手" href="https://static001.geekbang.org/resource/image/69/6c/69493b53f1b1d540acf886ebf021a26c.png">![TLS1.2握手](https://static001.geekbang.org/resource/image/69/6c/69493b53f1b1d540acf886ebf021a26c.png)</a>
 
 3. #### 握手分析
 
-   ![TLS1.3](https://static001.geekbang.org/resource/image/7a/db/7a2bc39fdbb421cf72a01e887e9156db.png)
+   <a data-fancybox title="TLS1.3" href="https://static001.geekbang.org/resource/image/7a/db/7a2bc39fdbb421cf72a01e887e9156db.png">![TLS1.3](https://static001.geekbang.org/resource/image/7a/db/7a2bc39fdbb421cf72a01e887e9156db.png)</a>
 
    ----------1---------->
 

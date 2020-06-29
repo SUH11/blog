@@ -32,7 +32,7 @@
 Accept: text/html,application/xml,image/webp,image/png
 ```
 
-![image-20200622102431305](https://raw.githubusercontent.com/SUH11/images/master/http/15-1.png)
+<a data-fancybox title="image-20200622102431305" href="https://raw.githubusercontent.com/SUH11/images/master/http/15-1.png">![image-20200622102431305](https://raw.githubusercontent.com/SUH11/images/master/http/15-1.png)</a>
 
 - **Accept** 字段标记的是客户端可理解的 MIME type
 

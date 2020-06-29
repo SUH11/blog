@@ -10,7 +10,7 @@ http性能问题：不算差，不够好
    
    在 TCP 协议里，建立连接和关闭连接都是非常“昂贵”的操作。TCP 建立连接要有“三次握手”，发送 3 个数据包，需要 1 个 RTT；关闭连接是“四次挥手”，4 个数据包需要 2 个 RTT。
    
-   ![image-20200622114500907](https://raw.githubusercontent.com/SUH11/images/master/http/17-1.png)
+   <a data-fancybox title="image-20200622114500907" href="https://raw.githubusercontent.com/SUH11/images/master/http/17-1.png">![image-20200622114500907](https://raw.githubusercontent.com/SUH11/images/master/http/17-1.png)</a>
    
    浪费的时间是：3/5 = 60%
    
@@ -26,7 +26,7 @@ http性能问题：不算差，不够好
 
    这样虽然不能改善 TCP 的连接效率，但基于“分母效应”，每个“请求 - 应答”的无效时间就会降低不少，整体传输效率也就提高了。
 
-   ![image-20200622133803300](https://raw.githubusercontent.com/SUH11/images/master/http/17-2.png)
+   <a data-fancybox title="image-20200622133803300" href="https://raw.githubusercontent.com/SUH11/images/master/http/17-2.png">![image-20200622133803300](https://raw.githubusercontent.com/SUH11/images/master/http/17-2.png)</a>
 
    RTT：一个来回
 

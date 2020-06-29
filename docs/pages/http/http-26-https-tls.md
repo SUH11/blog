@@ -29,9 +29,9 @@
      - 它非常简单，就是一个“通知”，告诉对方，后续的数据都将使用加密保护
      - 那么反过来，在它之前，数据都是明文的。
 
-   ![https://static001.geekbang.org/resource/image/69/6c/69493b53f1b1d540acf886ebf021a26c.png](https://static001.geekbang.org/resource/image/69/6c/69493b53f1b1d540acf886ebf021a26c.png)
+   <a data-fancybox title="TLS1.2握手" href="https://static001.geekbang.org/resource/image/69/6c/69493b53f1b1d540acf886ebf021a26c.png">![TLS1.2握手](https://static001.geekbang.org/resource/image/69/6c/69493b53f1b1d540acf886ebf021a26c.png)</a>
 
-   ![TLS过程](https://static001.geekbang.org/resource/image/9c/1e/9caba6d4b527052bbe7168ed4013011e.png)
+   <a data-fancybox title="TLS1.2握手过程详解" href="https://static001.geekbang.org/resource/image/9c/1e/9caba6d4b527052bbe7168ed4013011e.png">![TLS1.2握手过程详解](https://static001.geekbang.org/resource/image/9c/1e/9caba6d4b527052bbe7168ed4013011e.png)</a>
 
    client								server
 

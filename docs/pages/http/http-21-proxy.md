@@ -46,11 +46,11 @@
 
    例子：proxy
 
-   ![image-20200622165311712](https://static001.geekbang.org/resource/image/c5/e7/c5aa6d5f82e8cc1a35772293972446e7.png)
+   <a data-fancybox title="image-20200622165311712" href="https://static001.geekbang.org/resource/image/c5/e7/c5aa6d5f82e8cc1a35772293972446e7.png">![image-20200622165311712](https://static001.geekbang.org/resource/image/c5/e7/c5aa6d5f82e8cc1a35772293972446e7.png)</a>
 
    抓包数据：
 
-   ![image-20200622165330311](https://static001.geekbang.org/resource/image/5a/54/5a247e9e5bf66f5ac3316fddf4e2b254.png)
+   <a data-fancybox title="image-20200622165330311" href="https://static001.geekbang.org/resource/image/5a/54/5a247e9e5bf66f5ac3316fddf4e2b254.png">![image-20200622165330311](https://static001.geekbang.org/resource/image/5a/54/5a247e9e5bf66f5ac3316fddf4e2b254.png)</a>
 
    从抓包里就可以清晰地看出代理与客户端、源服务器的通信过程：
 
