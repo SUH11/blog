@@ -101,6 +101,11 @@ module.exports = {
                     { title: '20. HTTP的缓存控制', path: '/pages/http/http-20-cache.md' },
                     { title: '21. HTTP的代理服务', path: '/pages/http/http-21-proxy.md' },
                     { title: '22. HTTP的缓存代理', path: '/pages/http/http-22-cache-proxy.md' },
+                    { title: '23. HTTPS是什么', path: '/pages/http/http-23-https.md' },
+                    { title: '24. 对称加密和非对称加密', path: '/pages/http/http-24-encrypt.md' },
+                    { title: '25. 数字签名和证书', path: '/pages/http/http-25-certificate.md' },
+                    { title: '26. TLS', path: '/pages/http/http-26-https-tls.md' },
+                    { title: '27. TLS1.3特性详解', path: '/pages/http/http-27-tls1.3.md' },
                 ]
             },
             {

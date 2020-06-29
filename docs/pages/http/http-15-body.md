@@ -1,6 +1,8 @@
 # http的实体数据
 
-1. 数据类型与编码
+
+
+1. #### 数据类型与编码
 
    多用途互联网邮件拓展：Multipurpose Internet Mail Extendsions
 
@@ -19,7 +21,9 @@
    - deflate
    - br	
 
-2. 数据类型使用的头字段
+   
+
+2. #### 数据类型使用的头字段
 
    内容协商：客户端用 `Accept` 头告诉服务器希望接收什么样的数据，而服务器用 `Content` 头告诉客户端实际发送了什么样的数据
 
@@ -30,17 +34,17 @@ Accept: text/html,application/xml,image/webp,image/png
 
 ![image-20200622102431305](https://raw.githubusercontent.com/SUH11/images/master/http/15-1.png)
 
-**Accept** 字段标记的是客户端可理解的 MIME type
+- **Accept** 字段标记的是客户端可理解的 MIME type
 
-**Content-Type** 告诉实体数据的真实类型
+- **Content-Type** 告诉实体数据的真实类型
 
-**Accept-Encoding** 字段标记的是客户端支持的压缩格式
+- **Accept-Encoding** 字段标记的是客户端支持的压缩格式
 
-**Content-Encoding** 服务器实际使用的压缩格式放在响应头字段
+- **Content-Encoding** 服务器实际使用的压缩格式放在响应头字段
 
-**Accept-Language** 字段标记了客户端可理解的自然语言
+- **Accept-Language** 字段标记了客户端可理解的自然语言
 
-**Content-Language** 服务器告诉客户端实体数据使用的实际语言类型
+- **Content-Language** 服务器告诉客户端实体数据使用的实际语言类型
 
 > 字符集在 HTTP 里使用的请求头字段是 Accept-Charset
 >
@@ -58,7 +62,7 @@ Accept: text/html,application/xml;q=0.9,*/*;q=0.8
 
 
 
-4. 内容协商的结果
+4. #### 内容协商的结果
 
 内容协商的过程是不透明的，每个 Web 服务器使用的算法都不一样
 
@@ -70,7 +74,7 @@ Vary: Accept-Encoding,User-Agent,Accept
 
 
 
-#### 总结：
+### 总结
 
 1. 数据类型表示实体数据的内容是什么，使用的是 MIME type，相关的头字段是 Accept 和 Content-Type；
 2. 数据编码表示实体数据的压缩方式，相关的头字段是 Accept-Encoding 和 Content-Encoding；
