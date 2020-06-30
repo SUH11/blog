@@ -109,6 +109,16 @@ module.exports = {
                     { title: '25. 数字签名和证书', path: '/pages/http/http-25-certificate.md' },
                     { title: '26. TLS', path: '/pages/http/http-26-https-tls.md' },
                     { title: '27. TLS1.3特性详解', path: '/pages/http/http-27-tls1.3.md' },
+                    { title: '28. https的优化', path: '/pages/http/http-28-https.md' },
+                    { title: '29. 应该迁移到https嚒', path: '/pages/http/http-29-can-i-move-to-https.md' },
+                    { title: '30. http/2介绍', path: '/pages/http/http-30-http2.md' },
+                    { title: '31. http/2详解', path: '/pages/http/http-31-http2-kernel.md' },
+                    { title: '32. http/3介绍', path: '/pages/http/http-32-http3.md' },
+                    { title: '33. 应该迁移到http/2嚒', path: '/pages/http/http-33-can-i-move-to-http2.md' },
+                    { title: '34. Nginx介绍', path: '/pages/http/http-34-nginx.md' },
+                    { title: '35. CDN是什么', path: '/pages/http/http-35-cdn.md' },
+                    { title: '36. WebSocket介绍', path: '/pages/http/http-36-websockets.md' },
+                    { title: '36. http性能优化', path: '/pages/http/http-37-youhua1.md' },
                 ]
             },
             {
@@ -136,6 +146,15 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     { title: 'egg+mongodb项目搭建', path: '/pages/practice/egg_mongo.md' }
+                ]
+            },
+            {
+                title: '其他',
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    { title: '时间规划', path: '/pages/other/note.md' },
+                    { title: 'element ui合并单元格', path: '/pages/other/table.md' },
                 ]
             }
         ]

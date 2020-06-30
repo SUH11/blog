@@ -86,7 +86,7 @@ HTTP 有两个主要的缺点：**安全不足**和**性能不高**。
 
 5. 协议栈
 
-   ![协议栈](https://static001.geekbang.org/resource/image/83/1a/83c9f0ecad361ba8ef8f3b73d6872f1a.png)
+   <a data-fancybox title="协议栈" href="https://static001.geekbang.org/resource/image/83/1a/83c9f0ecad361ba8ef8f3b73d6872f1a.png">![协议栈](https://static001.geekbang.org/resource/image/83/1a/83c9f0ecad361ba8ef8f3b73d6872f1a.png)</a>
 
 
 

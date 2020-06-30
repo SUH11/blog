@@ -29,7 +29,7 @@
      - Payload len
      - Masking-key
 
-     ![](https://static001.geekbang.org/resource/image/29/c4/29d33e972dda5a27aa4773eea896a8c4.png)
+     <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/29/c4/29d33e972dda5a27aa4773eea896a8c4.png">![](https://static001.geekbang.org/resource/image/29/c4/29d33e972dda5a27aa4773eea896a8c4.png)</a>
 
    - 协议名
 

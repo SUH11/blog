@@ -34,13 +34,13 @@
 
        - 静态表
 
-       ![静态表](https://static001.geekbang.org/resource/image/76/0c/769dcf953ddafc4573a0b4c3f0321f0c.png)
+       <a data-fancybox title="静态表" href="https://static001.geekbang.org/resource/image/76/0c/769dcf953ddafc4573a0b4c3f0321f0c.png">![静态表](https://static001.geekbang.org/resource/image/76/0c/769dcf953ddafc4573a0b4c3f0321f0c.png)</a>
 
        - 动态表
 
          > 随着在 HTTP/2 连接上发送的报文越来越多，两边的“字典”也会越来越丰富，最终每次的头部字段都会变成一两个字节的代码，原来上千字节的头用几十个字节就可以表示了，压缩效果比 gzip 要好得多。
 
-         ![动态表](https://static001.geekbang.org/resource/image/5f/6f/5fa90e123c68855140e2b40f4f73c56f.png)
+         <a data-fancybox title="动态表" href="https://static001.geekbang.org/resource/image/5f/6f/5fa90e123c68855140e2b40f4f73c56f.png">![动态表](https://static001.geekbang.org/resource/image/5f/6f/5fa90e123c68855140e2b40f4f73c56f.png)</a>
 
    - 二进制帧
 
@@ -54,7 +54,7 @@
        - 流标志位
          - 从乱序的帧里识别出具有相同流 ID 的帧序列，按顺序组装起来就实现了虚拟的“流”
 
-       ![二进制帧格式](https://static001.geekbang.org/resource/image/61/e3/615b49f9d13de718a34b9b98359066e3.png)
+       <a data-fancybox title="二进制帧格式" href="https://static001.geekbang.org/resource/image/61/e3/615b49f9d13de718a34b9b98359066e3.png">![二进制帧格式](https://static001.geekbang.org/resource/image/61/e3/615b49f9d13de718a34b9b98359066e3.png)</a>
 
 
 
@@ -82,7 +82,7 @@
 
 ​	**流状态转换**
 
-​		![](https://static001.geekbang.org/resource/image/d3/b4/d389ac436d8100406a4a488a69563cb4.png)
+​		<a data-fancybox title="" href="https://static001.geekbang.org/resource/image/d3/b4/d389ac436d8100406a4a488a69563cb4.png">![](https://static001.geekbang.org/resource/image/d3/b4/d389ac436d8100406a4a488a69563cb4.png)</a>
 
 
 

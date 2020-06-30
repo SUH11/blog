@@ -10,7 +10,7 @@
 
    解决办法：“**QUIC**”协议，让 HTTP 跑在 QUIC 上而不是 TCP 上。
 
-   ![协议栈](https://static001.geekbang.org/resource/image/d2/03/d263202e431c84db0fd6c7e6b1980f03.png)
+   <a data-fancybox title="协议栈" href="https://static001.geekbang.org/resource/image/d2/03/d263202e431c84db0fd6c7e6b1980f03.png">![协议栈](https://static001.geekbang.org/resource/image/d2/03/d263202e431c84db0fd6c7e6b1980f03.png)</a>
 
 ​	
 
@@ -52,11 +52,11 @@
 
        包：
 
-       ![](https://static001.geekbang.org/resource/image/ae/3b/ae0c482ea0c3b8ebc71924b19feb9b3b.png)
+       <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/ae/3b/ae0c482ea0c3b8ebc71924b19feb9b3b.png">![](https://static001.geekbang.org/resource/image/ae/3b/ae0c482ea0c3b8ebc71924b19feb9b3b.png)</a>
 
      QUIC流：
 
-     ![](https://static001.geekbang.org/resource/image/9a/10/9ab3858bf918dffafa275c400d78d910.png)
+     <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/9a/10/9ab3858bf918dffafa275c400d78d910.png">![](https://static001.geekbang.org/resource/image/9a/10/9ab3858bf918dffafa275c400d78d910.png)</a>
 
 3. HTTP/3
 

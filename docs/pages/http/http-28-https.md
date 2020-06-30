@@ -14,7 +14,7 @@ HTTPS 连接大致上可以划分为两个部分
      - 验证证书时访问 CA 获取 CRL 或者 OCSP；
      - 非对称加密解密处理“Pre-Master”。
 
-     ![https优化点](https://static001.geekbang.org/resource/image/c4/ed/c41da1f1b1bdf4dc92c46330542c5ded.png)
+     <a data-fancybox title="https优化点" href="https://static001.geekbang.org/resource/image/c4/ed/c41da1f1b1bdf4dc92c46330542c5ded.png">![https优化点](https://static001.geekbang.org/resource/image/c4/ed/c41da1f1b1bdf4dc92c46330542c5ded.png)</a>
 
 2. 握手后的对称加密报文传输
 
@@ -89,7 +89,7 @@ HTTPS 连接大致上可以划分为两个部分
 
    “False Start”“Session ID”“Session Ticket”等方式只能实现 1-RTT，而 TLS1.3 更进一步实现了“0-RTT”，原理和“Session Ticket”差不多，但在发送 Ticket 的同时会带上应用数据（**Early Data**），免去了 1.2 里的服务器确认步骤，这种方式叫“**Pre-shared Key”**，简称为“PSK”。
 
-   ![0rtt](https://static001.geekbang.org/resource/image/11/ab/119cfd261db49550411a12b1f6d826ab.png)
+   <a data-fancybox title="0rtt" href="https://static001.geekbang.org/resource/image/11/ab/119cfd261db49550411a12b1f6d826ab.png">![0rtt](https://static001.geekbang.org/resource/image/11/ab/119cfd261db49550411a12b1f6d826ab.png)</a>
 
    缺点：容易受到“重放攻击”（Replay attack）的威胁。黑客可以截获“PSK”的数据，像复读机那样反复向服务器发送。
 
