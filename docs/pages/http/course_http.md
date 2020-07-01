@@ -18,4 +18,4 @@ cd www
 
 
 
-![](https://static001.geekbang.org/resource/image/27/cc/2781919e73f5d258ff1dc371af632acc.png)
+<a data-fancybox title="" href="https://static001.geekbang.org/resource/image/27/cc/2781919e73f5d258ff1dc371af632acc.png">![](https://static001.geekbang.org/resource/image/27/cc/2781919e73f5d258ff1dc371af632acc.png)</a>
