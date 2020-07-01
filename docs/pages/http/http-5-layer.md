@@ -8,9 +8,9 @@ TCP/IP 协议是一个“有层次的协议栈”
 
 
 
-1. TCP/IP 网络分层模型
+1. #### TCP/IP 网络分层模型
 
-   ![TCP/IP 网络分层模型](https://static001.geekbang.org/resource/image/2b/03/2b8fee82b58cc8da88c74a33f2146703.png)
+   <a data-fancybox title="TCP/IP 网络分层模型" href="https://static001.geekbang.org/resource/image/2b/03/2b8fee82b58cc8da88c74a33f2146703.png">![TCP/IP 网络分层模型](https://static001.geekbang.org/resource/image/2b/03/2b8fee82b58cc8da88c74a33f2146703.png)</a>
 
    层次顺序是“**从下往上**”数的
 
@@ -33,7 +33,7 @@ TCP/IP 协议是一个“有层次的协议栈”
 
 
 
-2. OSI 网络分层模型
+2. #### OSI 网络分层模型
 
    OSI：开放式系统互联通信参考模型（Open System Interconnection Reference Model）
 
@@ -41,7 +41,7 @@ TCP/IP 协议是一个“有层次的协议栈”
 
    这个时候国际标准组织（ISO）注意到了这种现象，感觉“野路子”太多，就想要来个“大一统”。于是设计出了一个新的网络分层模型，想用这个新框架来统一既存的各种网络协议。
 
-   ![OSI 网络分层模型](https://static001.geekbang.org/resource/image/3a/dc/3abcf1462621ff86758a8d9571c07cdc.png)
+   <a data-fancybox title="OSI 网络分层模型" href="https://static001.geekbang.org/resource/image/3a/dc/3abcf1462621ff86758a8d9571c07cdc.png">![OSI 网络分层模型](https://static001.geekbang.org/resource/image/3a/dc/3abcf1462621ff86758a8d9571c07cdc.png)</a>
 
    OSI 模型分成了七层
 
@@ -59,9 +59,9 @@ TCP/IP 协议是一个“有层次的协议栈”
 
 
 
-3. 两个分层模型的映射关系
+3. #### 两个分层模型的映射关系
 
-   ![两个分层模型的映射关系](https://static001.geekbang.org/resource/image/9d/94/9d9b3c9274465c94e223676b6d434194.png)
+   <a data-fancybox title="两个分层模型的映射关系" href="https://static001.geekbang.org/resource/image/9d/94/9d9b3c9274465c94e223676b6d434194.png">![两个分层模型的映射关系](https://static001.geekbang.org/resource/image/9d/94/9d9b3c9274465c94e223676b6d434194.png)</a>
 
    - 第一层：物理层，TCP/IP 里无对应；
    - 第二层：数据链路层，对应 TCP/IP 的链接层；

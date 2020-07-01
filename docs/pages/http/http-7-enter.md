@@ -4,11 +4,11 @@
 
 
 
-1. 使用 IP 地址访问 Web 服务器
+1. #### 使用 IP 地址访问 Web 服务器
 
 
 
-2. 抓包分析
+2. #### 抓包分析
 
    1. 使用“三次握手”建立与 Web 服务器的连接
       - 浏览器要用 HTTP 协议收发数据，首先要做的就是建立 TCP 连接。
@@ -21,7 +21,7 @@
 
    没有TCP的“四次挥手”，因为 HTTP/1.1 长连接特性，默认不会立即关闭连接。
 
-   ![](https://static001.geekbang.org/resource/image/8a/19/8a5bddd3d8046daf7032c7d60a3d1a19.png)
+   <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/8a/19/8a5bddd3d8046daf7032c7d60a3d1a19.png">![](https://static001.geekbang.org/resource/image/8a/19/8a5bddd3d8046daf7032c7d60a3d1a19.png)</a>
 
    再简要叙述一下这次最简单的浏览器 HTTP 请求过程：
 

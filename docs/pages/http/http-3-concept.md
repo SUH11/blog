@@ -2,21 +2,21 @@
 
 
 
-![](https://static001.geekbang.org/resource/image/51/64/5102fc33d04b59b36971a5e487779864.png)
+<a data-fancybox title="" href="https://static001.geekbang.org/resource/image/51/64/5102fc33d04b59b36971a5e487779864.png">![](https://static001.geekbang.org/resource/image/51/64/5102fc33d04b59b36971a5e487779864.png)</a>
 
-1. 网络世界
+1. #### 网络世界
 
    互联网世界更像是由数不清的大小岛屿组成的“千岛之国”。
 
 
 
-2. 浏览器
+2. #### 浏览器
 
    http里的请求方
 
 
 
-3. Web服务器
+3. #### Web服务器
 
    http里的应答方
 
@@ -25,7 +25,7 @@
 
 
 
-4. CDN
+4. #### CDN
 
    CDN，全称是“Content Delivery Network”，翻译过来就是“**内容分发网络**”。它应用了 HTTP 协议里的缓存和代理技术，代替源站响应客户端的请求。
 
@@ -39,13 +39,13 @@
 
 
 
-5. 爬虫
+5. #### 爬虫
 
    HTTP 协议并没有规定用户代理后面必须是“真正的人类”，它也完全可以是“机器人”，这些“机器人”的正式名称就叫做“爬虫”（Crawler），实际上是一种可以**自动访问 Web 资源的应用程序**。
 
 
 
-6. HTML/WebService/WAF
+6. #### HTML/WebService/WAF
 
    WAF：网络应用防火墙
 

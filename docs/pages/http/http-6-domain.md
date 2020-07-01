@@ -2,7 +2,7 @@
 
 
 
-1. 域名的形式
+1. #### 域名的形式
 
    域名是一个有层次的结构，是一串用“.”分隔的多个单词，最右边的被称为“顶级域名“
 
@@ -12,7 +12,7 @@
 
 
 
-2. 域名的解析
+2. #### 域名的解析
 
    就像 IP 地址必须转换成 MAC 地址才能访问主机一样，域名也必须要转换成 IP 地址，这个过程就是“域名解析”。
 
@@ -22,7 +22,7 @@
    - 顶级域名服务器（Top-level DNS Server）：管理各自域名下的权威域名服务器，比如 com 顶级域名服务器可以返回 apple.com 域名服务器的 IP 地址；
    - 权威域名服务器（Authoritative DNS Server）：管理自己域名下主机的 IP 地址，比如 apple.com 权威域名服务器可以返回 www.apple.com 的 IP 地址。
 
-   ![](https://static001.geekbang.org/resource/image/6b/f2/6b020454987543efdd1cf6ddec784bf2.png)
+   <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/6b/f2/6b020454987543efdd1cf6ddec784bf2.png">![](https://static001.geekbang.org/resource/image/6b/f2/6b020454987543efdd1cf6ddec784bf2.png)</a>
 
    例如，你要访问“www.apple.com”，就要进行下面的三次查询：
 
@@ -35,11 +35,12 @@
    - 许多大公司、网络运行商都会建立自己的 DNS 服务器，作为用户 DNS 查询的代理，代替用户访问核心 DNS 系统
    - 操作系统里也会对 DNS 解析结果做缓存
 
-   ![](https://static001.geekbang.org/resource/image/e5/ac/e51df3245609880641043af65bba94ac.png)
+   <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/e5/ac/e51df3245609880641043af65bba94ac.png">![](https://static001.geekbang.org/resource/image/e5/ac/e51df3245609880641043af65bba94ac.png)</a>
 
 
 
-3. 域名的“新玩法”
+3. #### 域名的“新玩法”
+
    - 第一种，“重定向”
    - 第二种，搭建一个在内部使用的 DNS，作为名字服务器
      - 比如数据库服务都用域名“mysql.inner.app”，商品服务都用“goods.inner.app”，发起网络通信时也就不必再使用写死的 IP 地址了，可以直接用域名

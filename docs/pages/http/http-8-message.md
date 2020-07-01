@@ -2,15 +2,15 @@
 
 
 
-1. TCP报文
+1. #### TCP报文
 
-   ![](https://static001.geekbang.org/resource/image/17/95/174bb72bad50127ac84427a72327f095.png)
+   <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/17/95/174bb72bad50127ac84427a72327f095.png">![](https://static001.geekbang.org/resource/image/17/95/174bb72bad50127ac84427a72327f095.png)</a>
 
 
 
-2. HTTP报文
+2. #### HTTP报文
 
-   ![](https://static001.geekbang.org/resource/image/62/3c/62e061618977565c22c2cf09930e1d3c.png)
+   <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/62/3c/62e061618977565c22c2cf09930e1d3c.png">![](https://static001.geekbang.org/resource/image/62/3c/62e061618977565c22c2cf09930e1d3c.png)</a>
 
    HTTP 协议的请求报文和响应报文的结构基本相同，由三大部分组成：
 
@@ -18,17 +18,17 @@
    - 头部字段集合（header）：使用 key-value 形式更详细地说明报文；
    - 消息正文（entity）：实际传输的数据，它不一定是纯文本，可以是图片、视频等二进制数据。
 
-    ![](https://static001.geekbang.org/resource/image/b1/df/b191c8760c8ad33acd9bb005b251a2df.png)
+    <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/b1/df/b191c8760c8ad33acd9bb005b251a2df.png">![](https://static001.geekbang.org/resource/image/b1/df/b191c8760c8ad33acd9bb005b251a2df.png)</a>
 
    请求行 + 头部(header) + 空行 + 实体(body)
 
 
 
-3. 起始行
+3. #### 起始行
 
    - 请求：请求行
 
-     ![](https://static001.geekbang.org/resource/image/36/b9/36108959084392065f36dff3e12967b9.png)
+     <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/36/b9/36108959084392065f36dff3e12967b9.png">![](https://static001.geekbang.org/resource/image/36/b9/36108959084392065f36dff3e12967b9.png)</a>
 
      ```
      # Method: GET URI: / Version: HTTP/1.1
@@ -37,7 +37,7 @@
 
    - 响应：状态行
 
-     ![](https://static001.geekbang.org/resource/image/a1/00/a1477b903cd4d5a69686683c0dbc3300.png)
+     <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/a1/00/a1477b903cd4d5a69686683c0dbc3300.png">![](https://static001.geekbang.org/resource/image/a1/00/a1477b903cd4d5a69686683c0dbc3300.png)</a>
 
      ```
      # Version: HTTP/1.1 StatusCode: 200 Reason: OK
@@ -48,13 +48,13 @@
 
 
 
-4. 头部字段
+4. #### 头部字段
 
    请求头或响应头
 
-   ![](https://static001.geekbang.org/resource/image/1f/ea/1fe4c1121c50abcf571cebd677a8bdea.png)
+   <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/1f/ea/1fe4c1121c50abcf571cebd677a8bdea.png">![](https://static001.geekbang.org/resource/image/1f/ea/1fe4c1121c50abcf571cebd677a8bdea.png)</a>
 
-   ![](https://static001.geekbang.org/resource/image/cb/75/cb0d1d2c56400fe9c9988ee32842b175.png)
+   <a data-fancybox title="" href="https://static001.geekbang.org/resource/image/cb/75/cb0d1d2c56400fe9c9988ee32842b175.png">![](https://static001.geekbang.org/resource/image/cb/75/cb0d1d2c56400fe9c9988ee32842b175.png)</a>
 
    使用头字段需要注意下面几点：
 
