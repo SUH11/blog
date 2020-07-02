@@ -139,8 +139,9 @@ module.exports = {
                 collapsable: true, 
                 sidebarDepth: 1,
                 children: [
-                    { title: '1.104二叉树的最大深度', path: '/pages/datastruct/104.md' },
-                    { title: '链表', path: '/pages/datastruct/listNode.md' },
+                    { title: '104二叉树的最大深度', path: '/pages/datastruct/104.md' },
+                    { title: '链表概览', path: '/pages/datastruct/listNode.md' },
+                    { title: '链表题目', path: '/pages/datastruct/listNode-leetcode.md' },
                     { title: 'JavaScript实现二叉树笔记', path: '/pages/datastruct/bst.md' },
                     { title: '判断对角线', path: '/pages/datastruct/line.md' }
                 ]

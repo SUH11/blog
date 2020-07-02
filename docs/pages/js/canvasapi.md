@@ -1,25 +1,28 @@
 # Canvas Api
 
-CanvasAPI<br />
-<br />文档：[https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes)<br />
+**CanvasAPI**：[文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes)
 
-<a name="r4vIX"></a>
-### 1. canvas元素
+
+
+
+
+1. ### canvas元素
 
 
 ```html
 <canvas id="canvas" width="600" height="600"></canvas>
-<!--
-	注意：1. <canvas> 标签只有两个属性—— width和height
-				 没有设置：默认width：300 height：150
-				 该元素可以使用CSS来定义大小，但在绘制时图像会伸缩以适应它的框架尺寸
-				 如果CSS的尺寸与初始画布的比例不一致，它会出现扭曲。
--->
 ```
 
+> canvas标签只有两个属性—— **width**和**height** 
+>
+> 1. 没有设置：默认width：300 height：150
+> 2.  该元素可以使用CSS来定义大小，但在绘制时图像会伸缩以适应它的框架尺寸，如果CSS的尺寸与初始画布的比例不一致，它会出现扭曲。
 
-<a name="RCVcP"></a>
-### 2. 画布
+
+
+2. ###  画布
+
+`ele.getContext('2d')`
 
 
 ```javascript
@@ -29,12 +32,68 @@ let ctx = oCanvas.getContext('2d')
 ```
 
 
-<a name="rTdJ4"></a>
-### 3. 栅栏
 
-<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/388398/1592384807637-4d37b9d9-2e36-424b-bc68-828e1f05729d.png#align=left&display=inline&height=223&margin=%5Bobject%20Object%5D&name=image.png&originHeight=223&originWidth=241&size=5615&status=done&style=none&width=241)
-<a name="DYJCY"></a>
-### 4. 一些API
+3. ### 栅栏
+
+左上方为原点
+
+![](https://mdn.mozillademos.org/files/224/Canvas_default_grid.png)
+
+
+
+4. ### 一些API
+
+- 绘制矩形
+
+  ```javascript
+  // 绘制矩形 : fillReact(x, y, width, height)
+  ctx.fillRect(25, 25, 100, 100)
+  ctx.clearRect(45, 45, 60, 60)
+  ctx.strokeRect(50, 50, 50, 50) // 清除指定矩形区域，让清除部分完全透明
+  ```
+
+- 绘制路径
+
+  ```javascript
+  /*
+  绘制路径
+  	1. 首先，你需要创建路径起始点。
+    2. 然后你使用画图命令去画出路径。
+    3. 之后你把路径封闭。
+    4. 一旦路径生成，你就能通过描边或填充路径区域来渲染图形。
+  */
+  ctx.beginPath()
+  ctx.moveTo(75, 50);
+  ctx.lineTo(100, 75);
+  ctx.lineTo(100, 25);
+  ctx.fill() // ctx.stroke()
+  ```
+
+- 画圆
+
+  ```javascript
+  /*
+  	画圆
+  		注意：arc()函数中表示角的单位是弧度，不是角度。角度与弧度的js表达式:
+  				弧度=(Math.PI/180)*角度。
+  */
+  ctx.begin()
+  ctx.fillStyle = 'red'
+  ctx.arc(200, 200, 0, 360 * Math.PI / 180, false)
+  ctx.fill()
+  ```
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------分割线------------------------------------------------------------------------------------------------------
 
 
 ```javascript
@@ -159,17 +218,12 @@ function draw() {
 ```
 
 
-<a name="s0nbv"></a>
+
 ### 5. canvas优化
 
-
-```javascript
-/*
-	1. 避免浮点数的坐标点，用整数取而代之
-	2. 不要在用drawImage时缩放图像
-	3. 使用多层画布去画一个复杂的场景
-	4. 用CSS transforms特性缩放画布
-	5. 关闭透明度
-	6. 有动画，请使用window.requestAnimationFrame() 而非window.setInterval()
-*/
-```
+1. **避免浮点数的坐标点**，用整数取而代之
+2. 不要在用drawImage时缩放图像
+3. 使用多层画布去画一个复杂的场景
+4. 用CSS transforms特性缩放画布
+5. 关闭透明度
+6. 有动画，请使用window.requestAnimationFrame() 而非window.setInterval()

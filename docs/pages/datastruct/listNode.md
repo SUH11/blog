@@ -1,7 +1,8 @@
 # 链表
 
 
-<br />简单分为单链表、双链表（有previos指针指向前面的节点）<br />
+
+简单分为单链表、双链表（有previos指针指向前面的节点）
 
 ```javascript
 function listNode(val) {
@@ -10,11 +11,14 @@ function listNode(val) {
 }
 ```
 
-<br />也分为普通链表和环形链表<br />
-<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/388398/1590576349874-df4c2e1d-f6d2-4a98-b78f-90e3a08a5906.png#align=left&display=inline&height=202&margin=%5Bobject%20Object%5D&name=image.png&originHeight=202&originWidth=353&size=17474&status=done&style=none&width=353)<br />leetcode题目：
+也分为普通链表和环形链表
+
+![](https://cdn.nlark.com/yuque/0/2020/png/388398/1590576349874-df4c2e1d-f6d2-4a98-b78f-90e3a08a5906.png)
+
+leetcode题目：
 
 | [删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list) | [356](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/solution) | 81.5% | 简单 |  |
-| --- | --- | --- | --- | --- |
+| :-: | :-- | --- | --- | --- |
 | 面试题24 | [反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof)  <br />设置当前节点的prev指向cu rr.next | [396](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/solution) | 75.2% | 简单 |
 | 206 | [反转链表](https://leetcode-cn.com/problems/reverse-linked-list) | [4970](https://leetcode-cn.com/problems/reverse-linked-list/solution) | 69.1% | 简单 |
 | 面试题52 | [两个链表的第一个公共节点](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof)   <br />a + b + c = b + c + a | [191](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/solution) | 63.8% | 简单 |
@@ -28,16 +32,14 @@ function listNode(val) {
 | 23 | [合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists)  <br />1. 先归并 | [821](https://leetcode-cn.com/problems/merge-k-sorted-lists/solution) | 51.7% | 困难 |
 
 
-<br />常用的方法：<br />
+常用的方法：
 
 1. 逆序用栈，例如反转链表
 1. 判断相交：
-
-
 
 ```
 a + b + c = b + c + a
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/388398/1590576392906-c06610aa-fa3f-4150-95cf-7c6fa8bbe6ac.png#align=left&display=inline&height=152&margin=%5Bobject%20Object%5D&name=image.png&originHeight=152&originWidth=349&size=11786&status=done&style=none&width=349)<br />
+​                                           ![image.png](https://cdn.nlark.com/yuque/0/2020/png/388398/1590576392906-c06610aa-fa3f-4150-95cf-7c6fa8bbe6ac.png)
 
