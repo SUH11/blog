@@ -165,6 +165,7 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
+                    { title: '复习计划表', path: '/pages/other/review.md' },
                     { title: '时间规划', path: '/pages/other/note.md' },
                     { title: 'element ui合并单元格', path: '/pages/other/table.md' },
                 ]
