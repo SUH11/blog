@@ -6,7 +6,7 @@
 
 代码AC
 
-### [206] **反转链表**
+### [[206] **反转链表**](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 ```javascript
 /**
@@ -33,7 +33,7 @@ var reverseList = function(head) {
 
 
 
-### [142] **环形链表 II**
+### [[142] **环形链表 II**](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 
 ```javascript
 /**
@@ -72,7 +72,7 @@ var detectCycle = function(head) {
 
 
 
-### [203] **移除链表元素**
+### [[203] **移除链表元素**](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 
 ```javascript
 /*
@@ -109,7 +109,7 @@ var removeElements = function (head, val) {
 
 
 
-### [445] 两数相加 II
+### [[445] 两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)
 
 ```javascript
 /**
@@ -161,7 +161,63 @@ var addTwoNumbers = function(l1, l2) {
 
 
 
+### [[23] 合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
 
+```javascript
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode[]} lists
+ * @return {ListNode}
+ */
+var mergeKLists = function(lists) {
+  if (!lists ||!lists.length) {
+    return null
+  }
+  // 分治
+  return mergeSort(lists, 0, lists.length - 1)
+};
+function mergeSort(list, l, r) {
+  if (l === r) {
+    return list[l]
+  }
+  const mid = parseInt((l + r) >> 1)
+  return merge(mergeSort(list, l, mid), mergeSort(list, mid + 1, r))
+}
+function merge(l1, l2) {
+  let ele = {
+    next: null
+  }
+  let curr = ele
+  while (l1 && l2) {
+    let val
+    if (l1.val < l2.val) {
+      val = l1.val
+      l1 = l1.next
+    } else {
+      val = l2.val
+      l2 = l2.next
+    } 
+    curr.next = {
+      val,
+      next: null
+    }
+    curr = curr.next
+  }
+  if (l1) {
+    curr.next = l1
+  }
+  if (l2) {
+    curr.next = l2
+  }
+  return ele.next
+}
+```
 
 
 
