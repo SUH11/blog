@@ -48,6 +48,7 @@ module.exports = {
                     { title: '事件', path: '/pages/js/event.md' },
                     { title: '提升', path: '/pages/js/promote.md' },
                     { title: '原型', path: '/pages/js/prototype.md' },
+                    { title: 'canvas相关API', path: '/pages/js/canvasapi.md' },
                     { title: 'echarts保存为图片，从源码简单分析', path: '/pages/js/echarts.md' },
                     { title: '常用优化方法', path: '/pages/js/youhua.md' },
                 ]
