@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    ul,li,body {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-    .content .item {
-      text-align: center;
-    }
-    img {
-      width: 400px;
-    }
-  </style>
-</head>
-<body>
-  <div class="content">
+# manhua
+
+<div class="content">
     <!-- <div class="item">
       <h4>风起苍岚/第2季7话</h4>
       <ul>
@@ -70,13 +51,11 @@
           const oImg = document.createElement('img')
           oImg.src = `https://mhpic.dm300.com/comic/F/风起苍岚/${curr}/${j}.jpg-mht.low.webp`
           oLi.appendChild(oImg)
-          oUl.appendChild(oLi)
+          oUl.appendChild(woLi)
         }
         oDiv.appendChild(oUl)
-
+    
         oContent.appendChild(oDiv)
       }
     }
   </script>
-</body>
-</html>
