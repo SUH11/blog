@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul,li,body {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .content .item {
+      text-align: center;
+    }
+    img {
+      width: 60%;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <!-- <div class="item">
+      <h2>寻找前世之旅/第2季7话</h2>
+      <ul>
+        <li>
+          <img src="https://mhpic.dm300.com/comic/F/风起苍岚/第2季7话F0_239096/2.jpg-mht.low.webp" />
+        </li>
+      </ul> -->
+    </div>
+  </di>
+  <script>
+    window.onload = function() {
+      /*
+        步骤：
+          1. 登录网页版
+          2. 找到漫画
+          3. 目录
+          4. 点开要付费的章节
+          5. 查看请求，这里是：https://m.manhuatai.com/api/getchapterinfo?product_id=2&productname=mht&platformname=wap&comic_id=8842&chapter_newid=di463hua-1589527720015
+          6. getchapterinfo
+          7. res.data.current_chapter.rule
+      */
+      const title = '寻找前世之旅'
+      // <img src="https://mhpic.dm300.com/comic/F/风起苍岚/第2季7话F0_239096/2.jpg-mht.low.webp" />
+      // <img src="https://mhpic.dm300.com/comic/X/寻找前世之旅/第450话F0_240090/2.jpg-mht.low.webp" />
+      // GET : https://m.manhuatai.com/api/getchapterinfo?product_id=2&productname=mht&platformname=wap&comic_id=8842&chapter_newid=di463hua-1589527720015
+      const urls = [
+        '/comic/X/寻找前世之旅/第449话F0_239157/',
+        '/comic/X/寻找前世之旅/第450话F0_240090/',
+        '/comic/X/寻找前世之旅/第451话F0_240270/',
+        '/comic/X/寻找前世之旅/第452话F0_241041/',
+        '/comic/X/寻找前世之旅/第453话F1_241953/',
+        '/comic/X/寻找前世之旅/第454话F0_242857/',
+        '/comic/X/寻找前世之旅/第455话F0_243751/',
+        '/comic/X/寻找前世之旅/第456话F0_244676/',
+        '/comic/X/寻找前世之旅/第457话F0_245663/',
+        '/comic/X/寻找前世之旅/第458话F0_247383/',
+        '/comic/X/寻找前世之旅/第459话F3_249862',
+        '/comic/X/寻找前世之旅/第460话F0_251134/',
+        '/comic/X/寻找前世之旅/第461话F0_253490/',
+        '/comic/X/寻找前世之旅/第462话F0_254348/',
+        '/comic/X/寻找前世之旅/第463话F0_257273/',
+        '/comic/X/寻找前世之旅/第464话F0_258852/',
+        '/comic/X/寻找前世之旅/第465话F0_258989/',
+        '/comic/X/寻找前世之旅/第466话F1_260653/',
+        '/comic/X/寻找前世之旅/第467话F0_263296/',
+        '/comic/X/寻找前世之旅/第468话F0_264490/',
+        '/comic/X/寻找前世之旅/第469话F1_264610/',
+      ]
+      const oContent = document.getElementsByClassName('content')[0]
+
+      for (let i = 0; i < urls.length; i++) {
+        const curr = urls[i]
+        const oDiv = document.createElement('div')
+        oDiv.className = 'item'
+        const oTitle = document.createElement('h2')
+        oTitle.innerHTML = curr.split('/')[4]
+        oDiv.appendChild(oTitle)
+        
+        const oUl = document.createElement('ul')
+        for (let j = 1; j < 50; j++) {
+          const oLi = document.createElement('li')
+          const oImg = document.createElement('img')
+          oImg.src = `https://mhpic.dm300.com/${curr}/${j}.jpg-mht.low.webp`
+          // oImg.src = `https://mhpic.dm300.com/comic/F/风起苍岚/${curr}/${j}.jpg`
+          oLi.appendChild(oImg)
+          oUl.appendChild(oLi)
+        }
+        oDiv.appendChild(oUl)
+
+        oContent.appendChild(oDiv)
+      }
+    }
+  </script>
+</body>
+</html>
