@@ -79,6 +79,106 @@ v-show和v-if的区别？
 
 
 
+##### 查看vue源码的方式
+
+```javascript
+git clone git@github.com:vuejs/vue.git
+cd vue
+npm install
+npm install -g rollup
+// 修改package.json的dev命令，增加--sourcemap
+
+```
+
+
+
+##### rollup：
+
+JS模块打包器
+
+```undefined
+特性:
+       rollup 所有资源放同一个地方，一次性加载,利用 tree-shake特性来  剔除未使用的代码，减少冗余
+       webpack 拆分代码、按需加载  webpack2已经逐渐支持tree-shake
+   rollup:
+     1.打包你的 js 文件的时候如果发现你的无用变量，会将其删掉。
+     2.可以将你的 js 中的代码，编译成你想要的格式
+   webpack:
+    1.代码拆分
+    2.静态资源导入（如 js、css、图片、字体等）
+    拥有如此强大的功能，所以 webpack 在进行资源打包的时候，就会产生很多冗余的代码。
+```
+
+**对于应用使用 webpack，对于类库使用 Rollup**
+
+
+
+##### vue的data是函数，但根组件不做限制
+
+Vue组件可能存在多个实例，如果使用对象形式定义data，则会导致它们共用一个data对象，那么状态 变更将会影响所有组件实例，这是不合理的;采用函数形式定义，在initData时会将其作为工厂函数返 回全新data对象，有效规避多实例之间状态污染问题。
+
+而在Vue根实例创建过程中则不存在该限制，也是因为根实例只能有一个，不需要担心这种情况。
+
+总结：组件实例有多个，不能共用一个data；根实例只有一个，不需要担心
+
+
+
+##### v-for 和v-if的优先级比较
+
+1. 显然v-for优先于v-if被解析(把你是怎么知道的告诉面试官)
+2. 如果同时出现，每次渲染都会先执行循环再判断条件，无论如何循环都不可避免，浪费了性能
+3. 要避免出现这种情况，则在外层嵌套template，在这一层进行v-if判断，然后在内部进行v-for循环4. 如果条件出现在循环内部，可通过计算属性提前过滤掉那些不需要显示的项
+
+源码：compiler/codegen/index.js
+
+测试代码
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div v-for="item in list" v-if="item.isShow" :key="item.title">{{item.title}}			</div>
+  </div>
+  <script src="../dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        count: 10,
+        list: [
+          { title: '标题1', isShow: true },
+          { title: '标题2', isShow: true },
+          { title: '标题3', isShow: true },
+          { title: '标题4', isShow: true },
+          { title: '标题5', isShow: false },
+        ]
+      }
+    })
+
+    console.log(app.$options.render);
+  </script>
+</body>
+</html>
+```
+
+打印结果
+
+```javascript
+ƒ anonymous(
+) {
+with(this){return _c('div',{attrs:{"id":"app"}},_l((list),function(item){return (item.isShow)?_c('div',{key:item.title},[_v(_s(item.title))]):_e()}),0)}
+}
+```
+
+
+
+
+
 Vue双向绑定的原理？
 
 ```js

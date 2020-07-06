@@ -45,9 +45,14 @@ module.exports = {
                     { title: '作用域', path: '/pages/js/scope.md' },
                     { title: '闭包', path: '/pages/js/closure.md' },
                     { title: 'this', path: '/pages/js/this.md' },
+                    { title: '对象', path: '/pages/js/object.md' },
+                    { title: '内置对象', path: '/pages/js/inner-object.md' },
+                    { title: '类型', path: '/pages/js/type.md' },
+                    { title: '类型转换', path: '/pages/js/switch-type.md' },
                     { title: '事件', path: '/pages/js/event.md' },
                     { title: '提升', path: '/pages/js/promote.md' },
                     { title: '原型', path: '/pages/js/prototype.md' },
+                    { title: 'Class 类', path: '/pages/js/class.md' },
                     { title: 'canvas相关API', path: '/pages/js/canvasapi.md' },
                     { title: 'echarts保存为图片，从源码简单分析', path: '/pages/js/echarts.md' },
                     { title: '常用优化方法', path: '/pages/js/youhua.md' },
@@ -59,6 +64,7 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     { title: '1.css知识点', path: '/pages/css/css.md' },
+                    { title: '2.css3知识点', path: '/pages/css/css3.md' },
                     { title: 'currentColor', path: '/pages/css/currentColor.md' }
                 ]
             },
@@ -81,6 +87,14 @@ module.exports = {
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                     { title: 'React-ssr', path: '/pages/react/react-ssr.md' }
+                ]
+            },
+            {
+                title: '小程序',   // 必要的
+                collapsable: true, // 可选的, 默认值是 true,
+                sidebarDepth: 1,    // 可选的, 默认值是 1
+                children: [
+                    { title: '问题列表', path: '/pages/mini/question.md' }
                 ]
             },
             {
@@ -169,6 +183,7 @@ module.exports = {
                 children: [
                     { title: '复习计划表', path: '/pages/other/review.md' },
                     { title: '时间规划', path: '/pages/other/note.md' },
+                    { title: 'TODO LIST', path: '/pages/other/todo.md' },
                     { title: 'element ui合并单元格', path: '/pages/other/table.md' },
                     // { title: '风起苍岚 18 - 28', path: '/pages/manhua/index.md' },
                     { title: '随笔1 - 2020.06.05', path: '/pages/other/20200605.md' },
