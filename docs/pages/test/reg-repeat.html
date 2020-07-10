@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const str = 'aabbbcccccdddddd' // 排好序
+    const reg = /(\w)\1+/g
+    let value = ''
+    let num = 0
+    str.replace(reg, ($0, $1) => {
+      if ($0.length > num) {
+        num = $0.length
+        value = $1
+      }
+    })
+    // alert('出现最多的元素是' + value + '，一共出现了' + num + '次')
+    const str2 = '11a2c399dd'
+    alert(findNum(str2))
+    function findNum(str) {
+      return str.match(/\d+/g)
+    }
+  </script>
+</body>
+</html>

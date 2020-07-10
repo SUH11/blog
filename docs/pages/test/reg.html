@@ -6,8 +6,30 @@
   <title>Document</title>
 </head>
 <body>
-  <script>
-    
-  </script>
+<ul class="box">
+  <li class="box1">li</li>
+  <li>li</li>
+  <li class="box1box2">li</li>
+  <li>li</li>
+  <li class="box1 box2">li</li>
+</ul>
+<script>
+  const aLi = getElesByClass(document, 'box1')
+  for (let i = 0; i < aLi.length; i++) {
+    aLi[i].style.background = 'red'
+  }
+  
+  function getElesByClass(oParent, sClass) {
+    const aEles = oParent.getElementsByTagName('*')
+    let arr = []
+    let reg = new RegExp('\\b' + sClass + '\\b')
+    for (let i = 0; i < aEles.length; i++) {
+      if (reg.test(aEles[i].className)) {
+        arr.push(aEles[i])
+      }
+    }
+    return arr
+  }
+</script>
 </body>
 </html>
