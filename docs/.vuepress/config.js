@@ -49,8 +49,9 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                  { title: '104二叉树的最大深度', path: '/pages/datastruct/104.md' },
-                  { title: 'JS实现二叉树笔记', path: '/pages/datastruct/bst.md' },
+                  { title: '链表题目', path: '/pages/datastruct/tree/tree-leetcode.md' },
+                  { title: '104二叉树的最大深度', path: '/pages/datastruct/tree/104.md' },
+                  { title: 'JS实现二叉树笔记', path: '/pages/datastruct/tree/bst.md' },
                 ]
               },
               {
@@ -67,7 +68,7 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                   { title: '判断对角线', path: '/pages/datastruct/line.md' },
-                  { title: 'Master公式', path: '/pages/datastruct/line.md' }
+                  { title: 'Master公式', path: '/pages/datastruct/master.md' }
                 ]
               },
             ]
