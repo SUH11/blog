@@ -40,8 +40,17 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                  { title: '链表概览', path: '/pages/datastruct/listNode.md' },
-                  { title: '链表题目', path: '/pages/datastruct/listNode-leetcode.md' },
+                  { title: '链表概览', path: '/pages/datastruct/listNode/listNode.md' },
+                  { title: '链表题目', path: '/pages/datastruct/listNode/listNode-leetcode.md' },
+                ]
+              },
+              {
+                title: '分治、递归',
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                  { title: '分治、递归概览', path: '/pages/datastruct/recursion/recursion.md' },
+                  { title: '分治、递归题目', path: '/pages/datastruct/recursion/recursion-leetcode.md' },
                 ]
               },
               {
@@ -49,9 +58,19 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                  { title: '链表题目', path: '/pages/datastruct/tree/tree-leetcode.md' },
+                  { title: '树概览', path: '/pages/datastruct/tree/tree-note.md' },
+                  { title: '二叉树题目', path: '/pages/datastruct/tree/tree-leetcode.md' },
                   { title: '104二叉树的最大深度', path: '/pages/datastruct/tree/104.md' },
                   { title: 'JS实现二叉树笔记', path: '/pages/datastruct/tree/bst.md' },
+                ]
+              },
+              {
+                title: '动态规划',
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                  { title: '动态规划概览', path: '/pages/datastruct/dp/dp.md' },
+                  { title: '动态规划题目', path: '/pages/datastruct/dp/dp-leetcode.md' },
                 ]
               },
               {
@@ -67,8 +86,8 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                  { title: '判断对角线', path: '/pages/datastruct/line.md' },
-                  { title: 'Master公式', path: '/pages/datastruct/master.md' }
+                  { title: '判断对角线', path: '/pages/datastruct/skill/line.md' },
+                  { title: 'Master公式', path: '/pages/datastruct/skill/master.md' }
                 ]
               },
             ]
