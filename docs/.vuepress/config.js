@@ -3,13 +3,13 @@ module.exports = {
     description: '前端笔记', // meta 中的描述文字，用于SEO
     // 注入到当前页面的 HTML <head> 中的标签
     head: [
-        ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
-        ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
-        ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
-        ['link', { rel: 'icon', href: '/logo.jpeg' }],  //浏览器的标签栏的网页图标
+			['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
+			['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
+			['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
+			['link', { rel: 'icon', href: '/logo.jpeg' }],  //浏览器的标签栏的网页图标
     ],
     markdown: {
-        lineNumbers: true
+      lineNumbers: true
     },
     serviceWorker: true,
     themeConfig: {    
@@ -25,7 +25,6 @@ module.exports = {
                     { text: 'JavaScript', link: '/pages/js/eventLoop.md' },
                 ]
             },
-            // { text: '功能演示', link: '/pages/folder1/test3.md' },
             { text: 'Github', link: 'https://github.com/SUH11' },
         ],
         displayAllHeaders: false,
@@ -78,7 +77,7 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                  { title: '排序算法总览', path: '/pages/datastruct/sort.md' },
+                  { title: '排序算法总览', path: '/pages/datastruct/sort/sort.md' },
                 ]
               },
               {
