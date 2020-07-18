@@ -3,13 +3,13 @@ module.exports = {
     description: '前端笔记', // meta 中的描述文字，用于SEO
     // 注入到当前页面的 HTML <head> 中的标签
     head: [
-        ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
-        ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
-        ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
-        ['link', { rel: 'icon', href: '/logo.jpeg' }],  //浏览器的标签栏的网页图标
+			['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
+			['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
+			['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
+			['link', { rel: 'icon', href: '/logo.jpeg' }],  //浏览器的标签栏的网页图标
     ],
     markdown: {
-        lineNumbers: true
+      lineNumbers: true
     },
     serviceWorker: true,
     themeConfig: {    
@@ -25,7 +25,6 @@ module.exports = {
                     { text: 'JavaScript', link: '/pages/js/eventLoop.md' },
                 ]
             },
-            // { text: '功能演示', link: '/pages/folder1/test3.md' },
             { text: 'Github', link: 'https://github.com/SUH11' },
         ],
         displayAllHeaders: false,
@@ -40,8 +39,17 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                  { title: '链表概览', path: '/pages/datastruct/listNode.md' },
-                  { title: '链表题目', path: '/pages/datastruct/listNode-leetcode.md' },
+                  { title: '链表概览', path: '/pages/datastruct/listNode/listNode.md' },
+                  { title: '链表题目', path: '/pages/datastruct/listNode/listNode-leetcode.md' },
+                ]
+              },
+              {
+                title: '分治、递归',
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                  { title: '分治、递归概览', path: '/pages/datastruct/recursion/recursion.md' },
+                  { title: '分治、递归题目', path: '/pages/datastruct/recursion/recursion-leetcode.md' },
                 ]
               },
               {
@@ -49,7 +57,8 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                  { title: '链表题目', path: '/pages/datastruct/tree/tree-leetcode.md' },
+                  { title: '树概览', path: '/pages/datastruct/tree/tree-note.md' },
+                  { title: '二叉树题目', path: '/pages/datastruct/tree/tree-leetcode.md' },
                   { title: '104二叉树的最大深度', path: '/pages/datastruct/tree/104.md' },
                   { title: 'JS实现二叉树笔记', path: '/pages/datastruct/tree/bst.md' },
                 ]
@@ -59,6 +68,7 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
+                  { title: '动态规划概览', path: '/pages/datastruct/dp/dp.md' },
                   { title: '动态规划题目', path: '/pages/datastruct/dp/dp-leetcode.md' },
                 ]
               },
@@ -67,7 +77,7 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                  { title: '排序算法总览', path: '/pages/datastruct/sort.md' },
+                  { title: '排序算法总览', path: '/pages/datastruct/sort/sort.md' },
                 ]
               },
               {
@@ -75,8 +85,8 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                  { title: '判断对角线', path: '/pages/datastruct/line.md' },
-                  { title: 'Master公式', path: '/pages/datastruct/master.md' }
+                  { title: '判断对角线', path: '/pages/datastruct/skill/line.md' },
+                  { title: 'Master公式', path: '/pages/datastruct/skill/master.md' }
                 ]
               },
             ]
