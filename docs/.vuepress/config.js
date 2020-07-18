@@ -55,6 +55,14 @@ module.exports = {
                 ]
               },
               {
+                title: '动态规划',
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                  { title: '动态规划题目', path: '/pages/datastruct/dp/dp-leetcode.md' },
+                ]
+              },
+              {
                 title: '排序算法',
                 collapsable: true,
                 sidebarDepth: 1,
