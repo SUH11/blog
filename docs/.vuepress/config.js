@@ -22,7 +22,7 @@ module.exports = {
           ariaLabel: '分类',
           items: [
             { text: 'CSS', link: '/pages/css/css.md' },
-            { text: 'JavaScript', link: '/pages/js/eventLoop.md' },
+            { text: 'JavaScript', link: '/pages/js/base/eventLoop.md' },
           ]
         },
         { text: 'Github', link: 'https://github.com/SUH11' },
@@ -136,9 +136,9 @@ module.exports = {
               collapsable: true,
               sidebarDepth: 1,
               children: [
-                { title: '编译原理', path: '/pages/js/compiler/compiler.md' },
-                { title: 'echarts保存为图片，从源码简单分析', path: '/pages/js/compiler/echarts.md' },
-                { title: '常用优化方法', path: '/pages/js/compiler/youhua.md' },
+                { title: '编译原理', path: '/pages/js/deep/compiler.md' },
+                { title: 'echarts保存为图片，从源码简单分析', path: '/pages/js/deep/echarts.md' },
+                { title: '常用优化方法', path: '/pages/js/deep/youhua.md' },
               ]
             },
           ]
