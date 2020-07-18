@@ -85,6 +85,48 @@
    - 在转换抽象语法树的时候，我们可以通过添加/删除/替换节点属性来操纵节点。我们也可以添加节点，删除节点，或者基于现有的抽象语法树**创建一个全新的抽象语法树**。
    - 例子方法：`transformer() {}`、`traverser() {}`
 
+   ```javascript
+   /*
+    * AST ======> new AST
+    * ----------------------------------------------------------------------------
+    *   Original AST                     |   Transformed AST
+    * ----------------------------------------------------------------------------
+    *   {                                |   {
+    *     type: 'Program',               |     type: 'Program',
+    *     body: [{                       |     body: [{
+    *       type: 'CallExpression',      |       type: 'ExpressionStatement',
+    *       name: 'add',                 |       expression: {
+    *       params: [{                   |         type: 'CallExpression',
+    *         type: 'NumberLiteral',     |         callee: {
+    *         value: '2'                 |           type: 'Identifier',
+    *       }, {                         |           name: 'add'
+    *         type: 'CallExpression',    |         },
+    *         name: 'subtract',          |         arguments: [{
+    *         params: [{                 |           type: 'NumberLiteral',
+    *           type: 'NumberLiteral',   |           value: '2'
+    *           value: '4'               |         }, {
+    *         }, {                       |           type: 'CallExpression',
+    *           type: 'NumberLiteral',   |           callee: {
+    *           value: '2'               |             type: 'Identifier',
+    *         }]                         |             name: 'subtract'
+    *       }]                           |           },
+    *     }]                             |           arguments: [{
+    *   }                                |             type: 'NumberLiteral',
+    *                                    |             value: '4'
+    * ---------------------------------- |           }, {
+    *                                    |             type: 'NumberLiteral',
+    *                                    |             value: '2'
+    *                                    |           }]
+    *  (sorry the other one is longer.)  |         }
+    *                                    |       }
+    *                                    |     }]
+    *                                    |   }
+    * ----------------------------------------------------------------------------
+   */
+   ```
+
+   
+
 
 
 ​		转换的过程可能会涉及**遍历**（DFS）、设置**访问者**等等。
