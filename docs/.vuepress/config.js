@@ -177,7 +177,7 @@ module.exports = {
               collapsable: true,
               sidebarDepth: 1,
               children: [
-                { title: 'vue里的指令', path: '/pages/vue/directive.md' },
+                { title: 'vue里的指令', path: '/pages/vue/base/directive.md' },
               ]
             },
             {
@@ -185,10 +185,10 @@ module.exports = {
               collapsable: true,
               sidebarDepth: 1,
               children: [
-                { title: 'vuex使用及实现', path: '/pages/vue/vuex.md' },
-                { title: 'vue-router使用及简单实现', path: '/pages/vue/vue-router.md' },
-                { title: '简单提示框', path: '/pages/vue/notice.md' },
-                { title: 'vue.js源码分析之this._init', path: '/pages/vue/vue2init.md' },
+                { title: 'vuex使用及实现', path: '/pages/vue/source/vuex.md' },
+                { title: 'vue-router使用及简单实现', path: '/pages/vue/source/vue-router.md' },
+                { title: '简单提示框', path: '/pages/vue/components/notice.md' },
+                { title: 'vue.js源码分析之this._init', path: '/pages/vue/source/vue2init.md' },
               ]
             },
             {
@@ -196,7 +196,8 @@ module.exports = {
               collapsable: true,
               sidebarDepth: 1,
               children: [
-                { title: 'vue常见问题', path: '/pages/vue/question.md' },
+                { title: 'vue常见问题', path: '/pages/vue/deep/question.md' },
+                { title: '面试关于Vue的文章', path: '/pages/vue/deep/url.md' },
               ]
             }, 
           ]
