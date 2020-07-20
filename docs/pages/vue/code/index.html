@@ -6,13 +6,40 @@
   <title>Document</title>
 </head>
 <body>
+  <div id="app">
+    <p>{{name}}</p>
+    <p k-text="name"></p>
+    <p>{{age}}</p>
+    <p>{{dobule}}</p>
+    <input type="text" k-model="name">
+    <button @click="changeName">button</button>
+    <div k-html="html"></div>
+  </div>
+  <script src="./compile.js"></script>
   <script src="./kvue.js"></script>
   <script>
     const app = new KVue({
+      el: '#app',
       data: {
+        name: 'name',
+        age: 10,
+        dobule: 10,
         test: 'i am test...',
         foo: {
           bar: 'bar'
+        },
+        html: '<button>这是一个按钮</button>'
+      },
+      created() {
+        console.log('starting....')
+        setTimeout(() => {
+          this.name = '我是测试'
+        })
+      },
+      methods: {
+        changeName() {
+          this.name = 'abc'
+          this.age = 1
         }
       }
     })

@@ -20,8 +20,11 @@ class KVue {
 
     this.observe(this.$data)
 
-    new Watcher(this, 'test')
-    this.$data.test
+    // 测试代码
+    // new Watcher(this, 'test')
+    // this.$data.test
+
+    new Compile(options.el, this)
   }
 
   observe(value) {
@@ -83,16 +86,23 @@ class Dep {
     this.deps.forEach(dep => dep.update())
   }
 }
-
+// vue1.0不需要vdom
+// vue2.0做了改进，一个组件一个watcher，数据变化就通知watcher，再去做diff算法
 class Watcher {
-  constructor(vm, key) {
+  constructor(vm, key, cb) {
     this.vm = vm
     this.key = key
+    this.cb = cb
 
     Dep.target = this
+    this.vm[this.key]
+    Dep.target = null
   }
 
+
+
   update() {
-    console.log(`${this.key}属性update`)
+    // console.log(`${this.key}属性update`)
+    this.cb.call(this.vm, this.vm[this.key])
   }
 }
