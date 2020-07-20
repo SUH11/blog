@@ -185,6 +185,7 @@ module.exports = {
               collapsable: true,
               sidebarDepth: 1,
               children: [
+                { title: 'vue工作原理', path: '/pages/vue/source/vue-source-1.md' },
                 { title: 'vuex使用及实现', path: '/pages/vue/source/vuex.md' },
                 { title: 'vue-router使用及简单实现', path: '/pages/vue/source/vue-router.md' },
                 { title: '简单提示框', path: '/pages/vue/components/notice.md' },

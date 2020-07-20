@@ -99,8 +99,6 @@ class Watcher {
     Dep.target = null
   }
 
-
-
   update() {
     // console.log(`${this.key}属性update`)
     this.cb.call(this.vm, this.vm[this.key])
