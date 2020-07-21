@@ -1,7 +1,5 @@
-// const cheerio = require('cheerio') // 爬虫库 类似JQ用法
-// const axios = require('axios')
-import cheerio from 'cheerio'
-import axios from 'axios'
+const cheerio = require('cheerio') // 爬虫库 类似JQ用法
+const axios = require('axios')
 
 async function getIds() {
   let url = 'https://m.manhuatai.com/fengqicanglan/'
@@ -22,10 +20,10 @@ async function getRules() {
   let ids = await getIds() // 抓取页面id
   // 获取每个章节的rule
   let rules = []
-  for (let i = 1; i <= 10; i += 3) {
+  for (let i = 400; i <= ids.length; i += 3) {
     const curr = ids[i]
     const chapterDetail = await getCurrChapterById(curr.id)
-    rules.push(chapterDetail)
+    rules.push(...chapterDetail)
   }
   return rules
 }
@@ -50,5 +48,5 @@ async function getCurrChapterById(id) {
  * 3. 根据rules就可以拿到所有的图片了 // 这一步在index.html里有体现
 */
 getRules().then(rules => {
-  console.log('rules', rules)
+  console.log('rules', rules.map(item => item.chapter_name).join(','))
 })
