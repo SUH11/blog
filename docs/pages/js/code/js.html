@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #demo {
+      width: 2000px;
+      height: 2000px;
+      padding: 200px;
+      margin: 100px;
+      border: 10px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo">
+    <!-- 1111 -->
+    <input type="text" id="input" value="10">
+    1
+    <div>2</div>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>th1</th>
+          <th>th2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>11</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>111</td>
+          <td>222</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <script>
+    const oDemo = document.getElementById('demo')
+    const oInput = document.getElementById('input')
+    const oTable = document.getElementById('table')
+    const childNodes = oDemo.childNodes
+    const children = oDemo.children
+    const first = oDemo.firstChild
+    // console.log('childNodes', childNodes)
+    // console.log('children', children)
+    console.log(first, oDemo.style.width, oDemo.clientWidth, oDemo.offsetWidth)
+  </script>
+</body>
+</html>

@@ -1,20 +1,12 @@
-Vue源码解读及手写
+# Vue源码解读
 
 
 
-
-
-
-
-
-
-
+思维导图：https://www.processon.com/view/link/5d1eb5a0e4b0fdb331d3798c#map
 
 
 
 入口文件
-
-
 
 虚拟DOM：每个节点都会有一个JS对象相对应，描述真实DOM的JS对象
 
@@ -152,7 +144,13 @@ callHook(vm, 'created')
 
 
 
+patchVnode
 
+​	属性更新
+
+​	文本更新
+
+​	子节点更新
 
 
 
