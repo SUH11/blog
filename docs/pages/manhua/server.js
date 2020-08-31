@@ -48,7 +48,8 @@ async function getCurrChapterById(id) {
  * 3. 根据rules就可以拿到所有的图片了 // 这一步在index.html里有体现
 */
 getRules().then(rules => {
-  console.log('rules', rules)
+  // console.log('rules', rules)
 
-  // console.log('rules', rules.map(item => item.chapter_name).join(','))
+  // console.log('rules', rules.map(item => item.rule.split('/')[4]).join('\n'))
+  console.log('rules', rules.map(item => item.chapter_id).join('\n'))
 })
