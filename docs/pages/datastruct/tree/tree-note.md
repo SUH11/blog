@@ -45,7 +45,25 @@
 
 
 
+leetcode题目：
 
+| 题目 | 地址                                                         |                             题解                             | 通过率 | 难度 |
+| :--: | :----------------------------------------------------------- | :----------------------------------------------------------: | :----: | :--: |
+|  94  | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal) | [855](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution) | 72.6%  | 中等 |
+|  98  | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree) | [968](https://leetcode-cn.com/problems/validate-binary-search-tree/solution) | 32.3%  | 中等 |
+| 100  | [相同的树](https://leetcode-cn.com/problems/same-tree)       |  [945](https://leetcode-cn.com/problems/same-tree/solution)  | 60.1%  | 简单 |
+| 101  | [对称二叉树](https://leetcode-cn.com/problems/symmetric-tree) | [1093](https://leetcode-cn.com/problems/symmetric-tree/solution) | 52.9%  | 简单 |
+| 104  | [二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree) | [1245](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/solution) | 74.9%  | 简单 |
+| 144  | [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal) | [651](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/solution) | 66.6%  | 中等 |
+| 145  | [二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal) | [615](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/solution) | 72.3%  | 中等 |
+| 235  | [二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [377](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solution) | 64.9%  | 简单 |
+| 236  | [二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree) | [616](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/solution) | 65.2%  | 中等 |
+
+
+常用的方法：
+
+1. 递归
+1. 模拟栈
 
 
 

@@ -6,7 +6,8 @@ module.exports = {
 			['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
 			['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
 			['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }],
-			['link', { rel: 'icon', href: '/logo.jpeg' }],  //浏览器的标签栏的网页图标
+      ['link', { rel: 'icon', href: '/logo.jpeg' }],  //浏览器的标签栏的网页图标
+      ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ],
     markdown: {
       lineNumbers: true
@@ -36,7 +37,7 @@ module.exports = {
           children: [
             {
               title: '链表',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '链表概览', path: '/pages/datastruct/listNode/listNode.md' },
@@ -45,7 +46,7 @@ module.exports = {
             },
             {
               title: '分治、递归',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '分治、递归概览', path: '/pages/datastruct/recursion/recursion.md' },
@@ -54,7 +55,7 @@ module.exports = {
             },
             {
               title: '树',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '树概览', path: '/pages/datastruct/tree/tree-note.md' },
@@ -65,7 +66,7 @@ module.exports = {
             },
             {
               title: '动态规划',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '动态规划概览', path: '/pages/datastruct/dp/dp.md' },
@@ -74,7 +75,7 @@ module.exports = {
             },
             {
               title: '排序算法',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '排序算法总览', path: '/pages/datastruct/sort/sort.md' },
@@ -82,11 +83,19 @@ module.exports = {
             },
             {
               title: '常用技巧',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '判断对角线', path: '/pages/datastruct/skill/line.md' },
                 { title: 'Master公式', path: '/pages/datastruct/skill/master.md' }
+              ]
+            },
+            {
+              title: '无法分类',
+              collapsable: false,
+              sidebarDepth: 1,
+              children: [
+                { title: '布隆过滤器', path: '/pages/datastruct/other/time-570filter.md' },
               ]
             },
           ]
@@ -98,7 +107,7 @@ module.exports = {
           children: [
             {
               title: '基础',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '1. Event Loop', path: '/pages/js/base/eventLoop.md' },
@@ -113,7 +122,7 @@ module.exports = {
             },
             {
               title: '深入浅出',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '作用域', path: '/pages/js/middle/scope.md' },
@@ -133,7 +142,7 @@ module.exports = {
             },
             {
               title: '进阶',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '编译原理', path: '/pages/js/deep/compiler.md' },
@@ -150,7 +159,7 @@ module.exports = {
           children: [
             {
               title: '基础',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '1.css知识点', path: '/pages/css/css.md' },
@@ -158,7 +167,7 @@ module.exports = {
             },
             {
               title: 'CSS3',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: '2.css3知识点', path: '/pages/css/css3.md' },
@@ -174,7 +183,7 @@ module.exports = {
           children: [
             {
               title: '基础',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: 'vue里的指令', path: '/pages/vue/base/directive.md' },
@@ -182,7 +191,7 @@ module.exports = {
             },
             {
               title: '原理',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: 'vue工作原理', path: '/pages/vue/source/vue-source-1.md' },
@@ -194,7 +203,7 @@ module.exports = {
             },
             {
               title: '深入浅出',
-              collapsable: true,
+              collapsable: false,
               sidebarDepth: 1,
               children: [
                 { title: 'vue常见问题', path: '/pages/vue/deep/question.md' },
@@ -205,7 +214,7 @@ module.exports = {
         },
         {
           title: 'React',   // 必要的
-          collapsable: true, // 可选的, 默认值是 true,
+          collapsable: false, // 可选的, 默认值是 true,
           sidebarDepth: 1,    // 可选的, 默认值是 1
           children: [
             { title: 'React-ssr', path: '/pages/react/react-ssr.md' }
@@ -213,7 +222,7 @@ module.exports = {
         },
         {
           title: '小程序',   // 必要的
-          collapsable: true, // 可选的, 默认值是 true,
+          collapsable: false, // 可选的, 默认值是 true,
           sidebarDepth: 1,    // 可选的, 默认值是 1
           children: [
             { title: '问题列表', path: '/pages/mini/question.md' }
@@ -221,7 +230,7 @@ module.exports = {
         },
         {
           title: 'Webpack',
-          collapsable: true,
+          collapsable: false,
           sidebarDepth: 1,
           children: [
             { title: '1.webpack打包参数及常用包', path: '/pages/webpack/params.md' }
@@ -229,7 +238,7 @@ module.exports = {
         },
         {
           title: 'HTTP详解',
-          collapsable: true,
+          collapsable: false,
           sidebarDepth: 1,
           children: [
             { title: 'HTTP笔记前言', path: '/pages/http/course_http.md' },
@@ -272,7 +281,7 @@ module.exports = {
         },
         {
           title: 'Git常见用法',
-          collapsable: true, 
+          collapsable: false, 
           sidebarDepth: 1,
           children: [
             { title: 'git不同用户怎么切换', path: '/pages/git/local.md' }
@@ -280,7 +289,7 @@ module.exports = {
         },
         {
           title: '实战',
-          collapsable: true,
+          collapsable: false,
           sidebarDepth: 1,
           children: [
             { title: 'egg+mongodb项目搭建', path: '/pages/practice/egg_mongo.md' }
@@ -288,7 +297,7 @@ module.exports = {
         },
         {
           title: '其他',
-          collapsable: true,
+          collapsable: false,
           sidebarDepth: 1,
           children: [
             { title: '复习计划表', path: '/pages/other/review.md' },
