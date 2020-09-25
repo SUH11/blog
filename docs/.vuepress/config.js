@@ -95,7 +95,7 @@ module.exports = {
               collapsable: false,
               sidebarDepth: 1,
               children: [
-                { title: '布隆过滤器', path: '/pages/datastruct/other/time-570filter.md' },
+                { title: '布隆过滤器', path: '/pages/datastruct/other/time-57-bloom-filter.md' },
               ]
             },
           ]
@@ -207,7 +207,7 @@ module.exports = {
               sidebarDepth: 1,
               children: [
                 { title: 'vue常见问题', path: '/pages/vue/deep/question.md' },
-                { title: '面试关于Vue的文章', path: '/pages/vue/deep/url.md' },
+                { title: '面试关于Vue的文章', path: '/pages/vue/deep/vue-url.md' },
               ]
             }, 
           ]
