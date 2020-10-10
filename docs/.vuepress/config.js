@@ -31,6 +31,14 @@ module.exports = {
       displayAllHeaders: false,
       sidebar: [
         {
+          title: '面试知识点',   // 必要的
+          collapsable: false, // 可选的, 默认值是 true,
+          sidebarDepth: 1,    // 可选的, 默认值是 1
+          children: [
+            { title: '面试知识点复盘1', path: '/pages/interview/basic1.md' }
+          ]
+        },
+        {
           title: '算法和数据结构',
           collapsable: false, 
           sidebarDepth: 2,
