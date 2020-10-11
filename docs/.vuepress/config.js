@@ -37,7 +37,8 @@ module.exports = {
           children: [
             { title: '面试知识点复盘1', path: '/pages/interview/basic1.md' },
             { title: '手写call apply bind', path: '/pages/js/middle/call-apply-bind.md' },
-            { title: '原型', path: '/pages/js/middle/prototype.md' },
+            { title: '原型及原型链', path: '/pages/js/middle/prototype.md' },
+            { title: '节流防抖', path: '/pages/js/middle/throttle-debounce.md' },
           ]
         },
         {

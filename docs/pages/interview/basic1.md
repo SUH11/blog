@@ -16,13 +16,13 @@
 
    canvas绘画 + echarts
 
-   说一下什么是原型链
+   说一下什么是原型链☑️
 
    - 原型链：如果在第一个对象上没有找到需要的属性或者方法引用，引擎就会继续在[[Prototype]]关联的对象上进行查找。
 
    同理，如果在后者中也没有找到需要的引用就会继续查找它的[[Prototype]]，以此类推。这一系列对象的链接被称为“原型链”。
 
-   **call apply bind的区别？**
+   **call apply bind的区别？**☑️
 
    - call、bind、apply都是显示绑定this
    - call、apply会立即执行，bind会返回原函数
