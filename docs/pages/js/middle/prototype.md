@@ -1,4 +1,4 @@
-# 原型
+# 原型和原型链
 
 
 
@@ -12,7 +12,7 @@
 
    JavaScript中的对象有一个特殊的[[Prototype]]内置属性，其实就是**对于其他对象的引用**。
 
-   > 几乎所有yo对象在创建时[[Prototype]]属性都会被赋予一个非空的值。
+   > 几乎所有对象在创建时[[Prototype]]属性都会被赋予一个非空的值。
 
    - 对其他对象的引用
 
@@ -89,21 +89,30 @@ Object.defineProperty(Object.prototype, "__proto__", {
 
 
 
+4. #### 原型链
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   如果在第一个对象上没有找到需要的属性或者方法引用，引擎就会继续在[[Prototype]]关联的对象上进行查找。同理，如果在后者中也没有找到需要的引用就会继续查找它的[[Prototype]]，以此类推。这一系列对象的链接被称为“原型链”。
+   
+   - **a.\_\_proto__**
+   
+     `.__proto__`实际上并不存在于你正在使用的对象中（本例中是a）。实际上，它和其他的常用函数（.toString()、.isPrototypeOf(..)，等等）一样，存在于内置的Object.prototype中。（它们是不可枚举的，参见上卷第2章。）
+   
+     ```javascript
+     function Foo() {
+       this.name = 'a'
+     }
+     let a = new Foo()
+     a.__proto__ === Foo.prototype // true
+     ```
+   
+   - **.constructor**
+   
+     `Foo.prototype`默认有一个公有并且不可枚举的属性`.constructor`
+   
+     ```javascript
+     Foo.prototype.constructor === Foo // true
+     a.constructor === Foo // true
+     ```
+   
+     举例来说，`Foo.prototype`的`.constructor`属性只是Foo函数在声明时的默认属性。如果你创建了一个新对象并替换了函数默认的．prototype对象引用，那么新对象并不会自动获得`.constructor`属性。
 

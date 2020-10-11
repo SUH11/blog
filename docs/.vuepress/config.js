@@ -35,7 +35,9 @@ module.exports = {
           collapsable: false, // 可选的, 默认值是 true,
           sidebarDepth: 1,    // 可选的, 默认值是 1
           children: [
-            { title: '面试知识点复盘1', path: '/pages/interview/basic1.md' }
+            { title: '面试知识点复盘1', path: '/pages/interview/basic1.md' },
+            { title: '手写call apply bind', path: '/pages/js/middle/call-apply-bind.md' },
+            { title: '原型', path: '/pages/js/middle/prototype.md' },
           ]
         },
         {
@@ -123,7 +125,7 @@ module.exports = {
                 { title: '3. 模块化', path: '/pages/js/base/module.md' },
                 { title: '4. Promise', path: '/pages/js/base/promise.md' },
                 { title: '5. XMLHttpRequest', path: '/pages/js/base/XMLHttpRequest.md' },
-                { title: '6. 手写call apply bind', path: '/pages/js/base/call-apply-bind.md' },
+                { title: '6. 手写call apply bind', path: '/pages/js/middle/call-apply-bind.md' },
                 { title: '7. JavaScript位运算', path: '/pages/js/base/byte.md' },
                 { title: '8. requestAnimationFrame', path: '/pages/js/base/requestAnimationFrame.md' },
               ]
