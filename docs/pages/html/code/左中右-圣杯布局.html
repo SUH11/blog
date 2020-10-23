@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap {
+      width: calc(70% - 400px);
+      margin: 0 auto;
+      font-size: 20px;
+      padding: 0 200px;
+      overflow: hidden;
+    }
+    #main {
+      width: 100%;
+      height: 500px;
+      float: left;
+      background: #ffcccc;
+    }
+    #left {
+      width: 200px;
+      background: #6cf;
+      float: left;
+      height: 500px;
+      position: relative;
+      margin-left: -100%;
+      left: -200px;
+    }
+    #right {
+      width: 200px;
+      height: 500px;
+      float: left;
+      background: #6cf;
+      margin-right: -100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section id="main">main</section>
+    <aside id="left">left</aside>
+    <aside id="right">right</aside>
+  </div>
+</body>
+</html>

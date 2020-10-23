@@ -1,4 +1,4 @@
-Event Loop
+## Event Loop
 
 一旦执行栈为空，Event Loop 就会从 Task 队列中拿出需要执行的代码并放入执行栈中执行，所以本质上来说 JS 中的异步还是同步行为。
 

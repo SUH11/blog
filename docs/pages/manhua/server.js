@@ -20,7 +20,7 @@ async function getRules() {
   let ids = await getIds() // 抓取页面id
   // 获取每个章节的rule
   let rules = []
-  for (let i = 408; i < ids.length - 1; i += 3) {
+  for (let i = 409; i < ids.length - 1; i += 3) {
     const curr = ids[i]
     const chapterDetail = await getCurrChapterById(curr.id)
     rules.push(...chapterDetail)

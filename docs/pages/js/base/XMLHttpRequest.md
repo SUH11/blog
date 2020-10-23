@@ -1,4 +1,4 @@
-原生JS实现Ajax
+## 原生JS实现Ajax
 
 1. get
 ```javascript
@@ -28,7 +28,7 @@ function postAjax() {
     }
   }
 }
-```  
+```
 
 
 

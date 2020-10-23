@@ -1,4 +1,4 @@
-**requestAnimationFrame**
+## **requestAnimationFrame**
 
 1. 希望执行一个动画，并且要求浏览器在下次重绘之前调用指定的回调函数更新动画
 

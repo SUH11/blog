@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上中下布局</title>
+  <style>
+    /* #66ccff #ccffff #ffcccc ##99ccff */
+     body {
+       margin: 0;
+     }
+    .wrap {
+      width: 900px;
+      margin: 0 auto;
+      font-size: 20px;
+      text-align: center;
+    }
+    #header {
+      height: 100px;
+      background: #66ccff;
+    }
+    #section {
+      /* 中间高度自适应 */
+      height: calc(100vh - 200px); 
+      background: #ccffff;
+    }
+    #footer {
+      height: 100px;
+      background: #9cf;
+    }
+  </style>
+</head>
+<body>
+  <header id="header" class="wrap">header</header>
+  <section id="section" class="wrap">section</section>
+  <footer id="footer" class="wrap">footer</footer>
+</body>
+</html>

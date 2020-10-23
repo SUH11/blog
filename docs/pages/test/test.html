@@ -6,7 +6,25 @@
   <title>Document</title>
 </head>
 <body>
-  <button class="btn">我是按钮， 点我！</button>
-  <script src="debounce.js"></script>
+  <!-- <button class="btn">我是按钮， 点我！</button> -->
+  <ul>
+    <li data-id="11">11</li>
+    <li data-id="22">22</li>
+  </ul>
+  <!-- <script src="deepCopy.js"></script> -->
+  <script>
+    let oUl = document.getElementsByTagName('ul')[0]
+    oUl.onclick = function(event) {
+      if (event.target.nodeName !== 'LI') {
+        return
+      }
+      const oTarget = event.target
+      const id = oTarget.attributes['data-id'] && oTarget.attributes['data-id'].value || ''
+      if (id) {
+        // dosomething...
+        console.log('id', id)
+      }
+    }
+  </script>
 </body>
 </html>

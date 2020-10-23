@@ -31,7 +31,7 @@ module.exports = {
       displayAllHeaders: false,
       sidebar: [
         {
-          title: '面试知识点',   // 必要的
+          title: '复盘知识点',   // 必要的
           collapsable: false, // 可选的, 默认值是 true,
           sidebarDepth: 1,    // 可选的, 默认值是 1
           children: [
@@ -39,6 +39,15 @@ module.exports = {
             { title: '手写call apply bind', path: '/pages/js/middle/call-apply-bind.md' },
             { title: '原型及原型链', path: '/pages/js/middle/prototype.md' },
             { title: '节流防抖', path: '/pages/js/middle/throttle-debounce.md' },
+            { title: 'Flex布局', path: '/pages/interview/flex.md' },
+            { title: '移动端遇到的问题', path: '/pages/interview/mobile-question.md' },
+            { title: '红宝石粗读', path: '/pages/interview/red-4.md' },
+            { title: 'html页面渲染的过程', path: '/pages/interview/render.md' },
+            { title: '事件委托', path: '/pages/interview/shijianweituo.md' },
+            { title: '常用优化手段', path: '/pages/interview/youhua.md' },
+            { title: '重绘、回流', path: '/pages/interview/重绘+回流.md' },
+            { title: '头条面试题', path: '/pages/interview/toutiao.md' },
+            { title: 'CVTE一面', path: '/pages/interview/cvte-1.md' },
           ]
         },
         {
@@ -188,6 +197,24 @@ module.exports = {
           ]
         },
         {
+          title: 'HTML知识点',
+          collapsable: false,
+          sidebarDepth: 2,
+          children: [
+            {
+              title: '常见基础知识',
+              collapsable: false,
+              sidebarDepth: 1,
+              children: [
+                { title: 'BFC', path: '/pages/html/BFC.md' },
+                { title: '清浮动', path: '/pages/html/清浮动.md' },
+                { title: '布局', path: '/pages/html/布局.md' },
+                { title: 'css3布局', path: '/pages/html/css3布局.md' },
+              ]
+            }
+          ]
+        },
+        {
           title: 'Vue',
           collapsable: false,
           sidebarDepth: 2,
@@ -228,7 +255,9 @@ module.exports = {
           collapsable: false, // 可选的, 默认值是 true,
           sidebarDepth: 1,    // 可选的, 默认值是 1
           children: [
-            { title: 'React-ssr', path: '/pages/react/react-ssr.md' }
+            { title: 'React-ssr', path: '/pages/react/react-ssr.md' },
+            { title: 'react-native', path: '/pages/react/react-native.md' },
+            { title: 'react常见问题', path: '/pages/react/question.md' }
           ]
         },
         {
