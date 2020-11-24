@@ -20,7 +20,7 @@ async function getRules() {
   let ids = await getIds() // 抓取页面id
   // 获取每个章节的rule
   let rules = []
-  for (let i = 409; i < ids.length - 1; i += 3) {
+  for (let i = 412; i < ids.length - 1; i += 3) {
     const curr = ids[i]
     const chapterDetail = await getCurrChapterById(curr.id)
     rules.push(...chapterDetail)
@@ -31,6 +31,7 @@ async function getRules() {
 async function getCurrChapterById(id) {
   const url = `https://m.manhuatai.com/api/getchapterinfo?product_id=2&productname=mht&platformname=wap&comic_id=9680&chapter_newid=${id}`
   const { data: chapterRes } = await axios.get(url)
+  // console.log('chapterRes', chapterRes)
   if (!chapterRes.status) {
     const { current_chapter, prev_chapter, next_chapter } = chapterRes.data
     return [

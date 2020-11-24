@@ -31,6 +31,14 @@ module.exports = {
       displayAllHeaders: false,
       sidebar: [
         {
+          title: 'Electron',   // 必要的
+          collapsable: false, // 可选的, 默认值是 true,
+          sidebarDepth: 1,    // 可选的, 默认值是 1
+          children: [
+            { title: 'Electron打印问题排查', path: '/pages/electron/print-issue.md' }
+          ]
+        },
+        {
           title: '复盘知识点',   // 必要的
           collapsable: false, // 可选的, 默认值是 true,
           sidebarDepth: 1,    // 可选的, 默认值是 1
